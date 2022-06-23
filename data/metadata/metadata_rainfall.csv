@@ -1,0 +1,54 @@
+id,station_name,latitude,longitude,key,filename,title,source,rel_folder,date_start,date_end
+A_46550,Prince Of Wales West,-6.37830266,106.7507353,/stations/staA_46550,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1994-01-01,2021-12-31
+A_14778,Gordon Ridge,-6.20667121,106.4330345,/stations/staA_14778,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1982-01-01,2021-12-31
+A_46803,Dark Glen,-6.37465093,106.5206761,/stations/staA_46803,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2010-01-01,2021-12-31
+A_32558,Colliers Yard,-6.24318854,106.6813524,/stations/staA_32558,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2019-01-01,2021-12-31
+A_14364,Ellavale Road,-6.27970587,106.1920201,/stations/staA_14364,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1994-01-01,2021-12-31
+A_90807,Marsden Springs,-6.14459175,106.5279796,/stations/staA_90807,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1985-01-01,2021-12-31
+A_90690,Hythe Passage,-6.14459175,106.2431444,/stations/staA_90690,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2004-01-01,2021-12-31
+A_85654,Great Gibcracks Chase,-6.17745735,106.7726457,/stations/staA_85654,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1985-01-01,2021-12-31
+A_71589,Ventnor Hills,-6.19936774,107.0538291,/stations/staA_71589,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1973-01-01,2021-12-31
+A_76130,Clayhall Road,-6.360044,106.8858494,/stations/staA_76130,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1976-01-01,2021-12-31
+A_26994,Halstead Pastures,-6.57184452,107.1086051,/stations/staA_26994,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1972-01-01,2021-12-31
+A_91603,Steble Street,-6.4038648,107.192595,/stations/staA_91603,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1978-01-01,2021-12-31
+A_56258,Coxford Close,-6.7471277,107.2911918,/stations/staA_56258,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2010-01-01,2021-12-31
+A_25290,Althorpe Place,-6.54628239,107.506644,/stations/staA_25290,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2010-01-01,2021-12-31
+A_68689,College Field Close,-6.76173464,107.1487742,/stations/staA_68689,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1996-01-01,2021-12-31
+A_33130,Grange Crescent,-6.91967209,107.5732882,/stations/staA_33130,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2010-01-01,2021-12-31
+A_81845,St Nicholas Strand,-6.89410996,107.6335418,/stations/staA_81845,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2010-01-01,2021-12-31
+A_28998,Southlands Willows,-6.85028916,107.6116314,/stations/staA_28998,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1985-01-01,2021-12-31
+A_71011,Venom Road,-6.84663743,107.6335418,/stations/staA_71011,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1976-01-01,2021-12-31
+A_44708,Bevan Grange,-6.8073813,107.6928824,/stations/staA_44708,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1975-01-01,2021-12-31
+A_34667,Chance Croft,-6.94523422,107.7193575,/stations/staA_34667,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2014-01-01,2021-12-31
+A_11834,Thorne Cottages,-6.86398316,107.781437,/stations/staA_11834,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1997-01-01,2021-12-31
+A_27036,Hayfield Estate,-6.98631622,107.7869146,/stations/staA_27036,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1982-01-01,2021-12-31
+A_58726,Woodcock Nook,-7.00913955,107.6180219,/stations/staA_58726,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2010-01-01,2021-12-31
+A_61972,Eldon Woodlands,-7.10408461,107.507557,/stations/staA_61972,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1981-01-01,2021-12-31
+A_30365,Cottage Acre,-7.17803221,107.5705494,/stations/staA_30365,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1980-01-01,2021-12-31
+A_75822,Homefield Buildings,-7.09951995,107.6317159,/stations/staA_75822,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2010-01-01,2021-12-31
+A_33749,Webster Boulevard,-7.07304488,107.7421808,/stations/staA_33749,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1975-01-01,2021-12-31
+A_68352,Harrier Corner,-6.99909729,107.863601,/stations/staA_68352,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2016-01-01,2021-12-31
+A_45512,Webster Gait,-6.92058502,107.8435164,/stations/staA_45512,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1997-01-01,2021-12-31
+A_29582,Sewell Road,-6.87767716,107.8416906,/stations/staA_29582,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1982-01-01,2021-12-31
+A_32481,Cranmer Covert,-6.23679801,106.590972,/stations/staA_32481,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,1971-01-01,2021-12-31
+A_82859,Bridge Street Lane,-6.42303639,107.014573,/stations/staA_82859,data_hujan_data_A.h5,data_A,Generated/Randomized Data,data\rainfall,2013-01-01,2021-12-31
+B_19074,Ashurst Cedars,-0.68798961,100.2442599,/stations/staB_19074,data_hujan_data_B.h5,data_B,Generated/Randomized Data,data\rainfall,1983-01-01,2021-12-31
+B_65620,Hopton Lodge,-0.72815867,100.3629412,/stations/staB_65620,data_hujan_data_B.h5,data_B,Generated/Randomized Data,data\rainfall,2017-01-01,2021-12-31
+B_62363,Rochester Brook,-0.90891946,100.4140655,/stations/staB_62363,data_hujan_data_B.h5,data_B,Generated/Randomized Data,data\rainfall,1982-01-01,2021-12-31
+B_55746,Ruskin Moorings,-0.54922375,100.421369,/stations/staB_55746,data_hujan_data_B.h5,data_B,Generated/Randomized Data,data\rainfall,2017-01-01,2021-12-31
+B_39119,Britannia Causeway,-0.42141309,100.3172946,/stations/staB_39119,data_hujan_data_B.h5,data_B,Generated/Randomized Data,data\rainfall,1991-01-01,2021-12-31
+B_31613,Aberdeen Ridings,-0.27716964,100.3848516,/stations/staB_31613,data_hujan_data_B.h5,data_B,Generated/Randomized Data,data\rainfall,1985-01-01,2021-12-31
+B_78038,Magpie Wharf,-1.09150611,100.3958068,/stations/staB_78038,data_hujan_data_B.h5,data_B,Generated/Randomized Data,data\rainfall,1993-01-01,2021-12-31
+B_83867,Watery Park,-0.93265572,100.406762,/stations/staB_83867,data_hujan_data_B.h5,data_B,Generated/Randomized Data,data\rainfall,2014-01-01,2021-12-31
+C_55635,Rathlyn Avenue,-6.51024962,106.8021788,/stations/staC_55635,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,2010-01-01,2021-12-31
+C_99014,Hunters Garden,-6.64147716,107.1873402,/stations/staC_99014,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,2010-01-01,2021-12-31
+C_57461,Broadlands Green,-6.51706663,107.2350593,/stations/staC_57461,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,2010-01-01,2021-12-31
+C_49756,Bay View Close,-6.57841977,106.883983,/stations/staC_49756,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,1982-01-01,2021-12-31
+C_92288,Daffodil Moor,-6.47957305,107.4497953,/stations/staC_92288,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,1980-01-01,2021-12-31
+C_92853,Foster Lawns,-6.81019829,107.4753591,/stations/staC_92853,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,1977-01-01,2021-12-31
+C_16911,Honey Newydd,-6.58523679,107.6986163,/stations/staC_16911,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,2007-01-01,2021-12-31
+C_90475,Golf Mews,-6.96017263,107.649193,/stations/staC_90475,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,1984-01-01,2021-12-31
+C_12497,Brunel Walk,-6.97380666,107.6287419,/stations/staC_12497,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,1987-01-01,2021-12-31
+C_31099,Lucorn Close,-6.97721517,107.5895441,/stations/staC_31099,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,1984-01-01,2021-12-31
+C_32565,Copse View,-6.86643867,107.7258844,/stations/staC_32565,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,1982-01-01,2021-12-31
+C_99186,Pine Tree West,-6.62954739,107.6116994,/stations/staC_99186,data_hujan_data_C.h5,data_C,Generated/Randomized Data,data\rainfall,1974-01-01,2021-12-31

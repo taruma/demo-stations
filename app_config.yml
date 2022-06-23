@@ -1,0 +1,21 @@
+DASH_APP:
+  APP_TITLE: Rainfall Stations Explorer
+  UPDATE_TITLE: Updating...
+  DEBUG: False
+
+TEMPLATE:
+  WATERMARK_SOURCE: https://raw.githubusercontent.com/fiakoenjiniring/static-assets/main/logo/fiakodev-logo-simple-1000-400.png
+  SHOW_LEGEND_INSIDE: False
+  THEME: BOOTSTRAP
+
+VERSION: v3.0.0
+GITHUB_LINK: https://github.com/fiakoenjiniring/demo-stations
+GITHUB_REPO: fiakoenjiniring/demo-stations
+
+DATASET:
+  METADATA: data/metadata # IGNORED IN run_metadata.py
+  RAINFALL: data/rainfall
+  COMPLETENESS: data/completeness
+
+APP:
+  MAPBOX_TOKEN: 
