@@ -4,7 +4,7 @@
 <img src="./_readme/fiakodev-demo-stations-thumbnail.png" alt="fiako-stations thumbnail"><br>
 
 <img alt="developed by" src="https://img.shields.io/badge/developed%20by-fiakodev-orange">
-<img alt="projects by" src="https://img.shields.io/badge/projects%20by-PT.%20FIAKO%20ENJINIRING%20INDONESIA-blue">
+<img alt="project by" src="https://img.shields.io/badge/project%20by-PT.%20FIAKO%20ENJINIRING%20INDONESIA-blue">
 <img alt="License" src="https://img.shields.io/github/license/fiakoenjiniring/demo-stations.svg">
 <br>
 <img alt="GitHub release" src="https://img.shields.io/github/release/fiakoenjiniring/demo-stations.svg?logo=github">
