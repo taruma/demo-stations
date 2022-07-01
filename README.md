@@ -1,30 +1,83 @@
 # RAINFALL STATION EXPLORER (fiako-stations)
 
-Rainfall Stations Explorer (fiako-stations) merupakan portal untuk memperoleh data hujan dari pos/stasiun hujan yang tersedia di database. Aplikasi web ini juga dapat digunakan untuk menentukan stasiun mana saja yang terdekat dengan lokasi titik tinjauan (lokasi proyek, outlet, dll). Output aplikasi ini adalah data hujan harian dalam bentuk _CSV (Comma Seperated Value)_. Tujuan aplikasi ini hanya untuk mensentralisasikan dataset dan pemerolehannya dengan mudah, untuk analisis selanjutnya akan dikembangkan di aplikasi yang terpisah. 
+<div align="center">
+<img src="./_readme/fiakodev-demo-stations-thumbnail.png" alt="fiako-stations thumbnail"><br>
 
-Situs resmi aplikasi ini adalah [demo-stations.dev.fiako.engineering](http://demo-stations.dev.fiako.engineering).
+<img alt="developed by" src="https://img.shields.io/badge/developed%20by-fiakodev-orange">
+<img alt="projects by" src="https://img.shields.io/badge/projects%20by-PT.%20FIAKO%20ENJINIRING%20INDONESIA-blue">
+<img alt="License" src="https://img.shields.io/github/license/fiakoenjiniring/demo-stations.svg">
+<br>
+<img alt="GitHub release" src="https://img.shields.io/github/release/fiakoenjiniring/demo-stations.svg?logo=github">
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/fiakoenjiniring/demo-stations.svg?logo=github">
+</div>
 
-## TATA CARA PENGGUNAAN / TUTORIAL
+**Rainfall Stations Explorer** atau `fiako-stations` adalah aplikasi web atau dashboard yang dapat digunakan untuk mengeksplorasi data hujan harian yang tersedia di database. Dari aplikasi ini dapat memperoleh informasi kelengkapan data dan akusisi data hujan harian dengan mudah dan cepat.
 
-Tutorial bisa di lihat pada dokumen [TUTORIAL.md](./docs/TUTORIAL.md).
+> Dataset untuk demo merupakan data acak. Lokasi stasiun hujan merupakan titik sembarang. Nama stasiun hujan dibangkitkan menggunakan [Name Generator](https://www.name-generator.org.uk/).
 
-## FITUR
+## FITUR APLIKASI
 
-Berikut daftar fitur aplikasi ini:
+<div align="center">
+<h3>Memudahkan eksplorasi data hujan harian yang dimiliki</h3>
+<img src="./_readme/fkstations-ft-01-loop.gif" width="450">
+<br>
+<span align="center">Navigasi dan Interaksi Peta</span>
+</div>
 
-- Melihat database yang tersedia dan yang dimiliki.
-- Melihat stasiun terdekat dari titik tinjauan.
-- Melihat secara sekilas mengenai kelengkapan data yang tersedia di database.
-- Memudahkan untuk mengeksplorasi data dan mengambil keputusan dalam ketentuan penggunaan data dari stasiun mana saja yang akan digunakan.
-- Mensentralisasikan data yang telah digunakan untuk kepentingan proyek selanjutnya atau _preliminary analysis/research_.
-- Mempersingkat pekerjaan untuk pemerolehan data dari kumpulan data yang telah dimiliki dari proyek sebelumnya. 
+<div align="center">
+<h3>Mengetahui informasi stasiun terdekat terhadap titik lokasi tinjauan</h3>
+<img src="./_readme/fkstations-ft-2-1-loop.gif" width="auto">
+<br>
+<span align="center">Pengisian Koordinat Titik Tinjau</span>
+<br><br>
+<img src="./_readme/fkstations-ft-2-2-loop.gif" width="450">
+<br>
+<span align="center">Interaksi Peta dan Tabel</span>
+</div>
+
+<div align="center">
+<h3>Melihat secara sekilas kelengkapan data dengan heatmap</h3>
+<img src="./_readme/fkstations-ft-3-1-loop.gif" width="450">
+<br>
+<span align="center">Navigasi dan Interaksi Heatmap</span>
+<br><br>
+<img src="./_readme/fkstations-ft-3-2-loop.gif" width="450">
+<br>
+<span align="center">Navigasi dan Interaksi Bar Plot</span>
+</div>
+
+<div align="center">
+<h3>Memilih stasiun dan periode yang akan digunakan di analisis</h3>
+<img src="./_readme/fkstations-ft-4-1-loop.gif" width="450">
+<br>
+<span align="center">Navigasi Memilih Stasiun</span>
+</div>
+
+<div align="center">
+<h3>Visualisasi & Download data hujan harian dengan periode yang telah dipilih</h3>
+<img src="./_readme/fkstations-ft-5-1-loop.gif" width="450">
+<br>
+<span align="center">Navigasi dan Interaksi Visualisasi</span>
+<br><br>
+<img src="./_readme/fkstations-ft-5-2-loop.gif" width="450">
+<br>
+<span align="center">Download Data Hujan Harian</span>
+<br><br>
+<img src="./_readme/fkstations-ft-5-3-loop.gif" width="450">
+<br>
+<span align="center">Isi File CSV</span>
+</div>
 
 ## KEKURANGAN
 
 Berikut daftar kekurangan atau _known issues_ aplikasi ini:
 
-- Penentuan data stasiun hujan masih berdasarkan radius dari titik tinjauan. Lebih tepatnya harusnya menggunakan DAS dari outlet/titik tinjauan. 
-- Proses pembuatan database harus dilakukan secara _case-by-case_. 
+- Penentuan data stasiun hujan terdekat masih berdasarkan radius dari titik tinjaun. Seharusnya berdasarkan DAS dari outlet/titik tinjauan.
+- Proses pembuatan dataset/database masih bersifat case-by-case. 
+
+## TATA CARA PENGGUNAAN / TUTORIAL
+
+Tutorial bisa di lihat pada dokumen [TUTORIAL.md](./docs/TUTORIAL.md).
 
 ## DOKUMENTASI
 
@@ -39,7 +92,8 @@ Berikut daftar dokumentasi yang tersedia terkait proyek ini:
 
 [MIT LICENSE](./LICENSE)
 
-Copyright (c) 2022 PT. FIAKO ENJINIRING INDONESIA
+```
+Copyright ©️ 2022 PT. FIAKO ENJINIRING INDONESIA
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -58,7 +112,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-----
-
-Dataset untuk demo merupakan data acak. Lokasi stasiun hujan merupakan titik sembarang. Nama stasiun hujan dibangkitkan menggunakan [Name Generator](https://www.name-generator.org.uk/).
+```
