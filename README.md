@@ -10,7 +10,7 @@ Berikut daftar fitur aplikasi ini:
 
 <div align="center">
 <h3>Memudahkan eksplorasi data hujan harian yang dimiliki</h3>
-<img src="./_readme/fkstations-ft-01-loop.gif" width="250px">
+<img src="./_readme/fkstations-ft-01-loop.gif" width="300px">
 <br>
 <span align="center">Navigasi dan Interaksi Peta</span>
 </div>
@@ -19,22 +19,45 @@ Berikut daftar fitur aplikasi ini:
 <h3>Mengetahui informasi stasiun terdekat terhadap titik lokasi tinjauan</h3>
 <img src="./_readme/fkstations-ft-2-1-loop.gif" width="auto">
 <br>
-<span align="center">Navigasi dan Interaksi Peta</span>
+<span align="center">Pengisian Koordinat Titik Tinjau</span>
+<br>
+<img src="./_readme/fkstations-ft-2-2-loop.gif" width="300px">
+<br>
+<span align="center">Interaksi Peta dan Tabel</span>
 </div>
 
-### Mengetahui informasi stasiun terdekat terhadap titik lokasi tinjauan.
+<div align="center">
+<h3>Melihat secara sekilas kelengkapan data dengan heatmap</h3>
+<img src="./_readme/fkstations-ft-3-1-loop.gif" width="300px">
+<br>
+<span align="center">Navigasi dan Interaksi Heatmap</span>
+<br>
+<img src="./_readme/fkstations-ft-3-2-loop.gif" width="300px">
+<br>
+<span align="center">Navigasi dan Interaksi Bar Plot</span>
+</div>
 
-![image](./_readme/fkstations-ft-2-1-loop.gif)
+<div align="center">
+<h3>Memilih stasiun dan periode yang akan digunakan di analisis</h3>
+<img src="./_readme/fkstations-ft-4-1-loop.gif" width="300px">
+<br>
+<span align="center">Navigasi Memilih Stasiun</span>
+</div>
 
-![image](./_readme/fkstations-ft-2-2-loop.gif)
-
-### Melihat secara sekilas kelengkapan data dengan heatmap.
-
-### Memilih stasiun dan periode yang akan digunakan di analisis.
-
-### Visualisasi & Download data hujan harian dengan periode yang telah dipilih.
-
-
+<div align="center">
+<h3>Visualisasi & Download data hujan harian dengan periode yang telah dipilih</h3>
+<img src="./_readme/fkstations-ft-5-1-loop.gif" width="300px">
+<br>
+<span align="center">Navigasi dan Interaksi Visualisasi</span>
+<br>
+<img src="./_readme/fkstations-ft-5-2-loop.gif" width="300px">
+<br>
+<span align="center">Download Data Hujan Harian</span>
+<br>
+<img src="./_readme/fkstations-ft-5-3-loop.gif" width="300px">
+<br>
+<span align="center">Isi File CSV</span>
+</div>
 
 ## KEKURANGAN
 
