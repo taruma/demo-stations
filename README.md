@@ -1,23 +1,40 @@
 # RAINFALL STATION EXPLORER (fiako-stations)
 
-Rainfall Stations Explorer (fiako-stations) merupakan portal untuk memperoleh data hujan dari pos/stasiun hujan yang tersedia di database. Aplikasi web ini juga dapat digunakan untuk menentukan stasiun mana saja yang terdekat dengan lokasi titik tinjauan (lokasi proyek, outlet, dll). Output aplikasi ini adalah data hujan harian dalam bentuk _CSV (Comma Seperated Value)_. Tujuan aplikasi ini hanya untuk mensentralisasikan dataset dan pemerolehannya dengan mudah, untuk analisis selanjutnya akan dikembangkan di aplikasi yang terpisah. 
+![image](./_readme/fiakodev-demo-stations-thumbnail.png)
 
-Situs resmi aplikasi ini adalah [demo-stations.dev.fiako.engineering](http://demo-stations.dev.fiako.engineering).
+**Rainfall Stations Explorer** atau `fiako-stations` adalah aplikasi web atau dashboard yang dapat digunakan untuk mengeksplorasi data hujan harian yang tersedia di database. Dari aplikasi ini dapat memperoleh informasi kelengkapan data dan akusisi data hujan harian dengan mudah dan cepat.
 
-## TATA CARA PENGGUNAAN / TUTORIAL
-
-Tutorial bisa di lihat pada dokumen [TUTORIAL.md](./docs/TUTORIAL.md).
-
-## FITUR
+## FITUR APLIKASI
 
 Berikut daftar fitur aplikasi ini:
 
-- Melihat database yang tersedia dan yang dimiliki.
-- Melihat stasiun terdekat dari titik tinjauan.
-- Melihat secara sekilas mengenai kelengkapan data yang tersedia di database.
-- Memudahkan untuk mengeksplorasi data dan mengambil keputusan dalam ketentuan penggunaan data dari stasiun mana saja yang akan digunakan.
-- Mensentralisasikan data yang telah digunakan untuk kepentingan proyek selanjutnya atau _preliminary analysis/research_.
-- Mempersingkat pekerjaan untuk pemerolehan data dari kumpulan data yang telah dimiliki dari proyek sebelumnya. 
+<div align="center">
+<h3>Memudahkan eksplorasi data hujan harian yang dimiliki</h3>
+<img src="./_readme/fkstations-ft-01-loop.gif" width="250px">
+<br>
+<span align="center">Navigasi dan Interaksi Peta</span>
+</div>
+
+<div align="center">
+<h3>Mengetahui informasi stasiun terdekat terhadap titik lokasi tinjauan</h3>
+<img src="./_readme/fkstations-ft-2-1-loop.gif" width="auto">
+<br>
+<span align="center">Navigasi dan Interaksi Peta</span>
+</div>
+
+### Mengetahui informasi stasiun terdekat terhadap titik lokasi tinjauan.
+
+![image](./_readme/fkstations-ft-2-1-loop.gif)
+
+![image](./_readme/fkstations-ft-2-2-loop.gif)
+
+### Melihat secara sekilas kelengkapan data dengan heatmap.
+
+### Memilih stasiun dan periode yang akan digunakan di analisis.
+
+### Visualisasi & Download data hujan harian dengan periode yang telah dipilih.
+
+
 
 ## KEKURANGAN
 
@@ -25,6 +42,10 @@ Berikut daftar kekurangan atau _known issues_ aplikasi ini:
 
 - Penentuan data stasiun hujan masih berdasarkan radius dari titik tinjauan. Lebih tepatnya harusnya menggunakan DAS dari outlet/titik tinjauan. 
 - Proses pembuatan database harus dilakukan secara _case-by-case_. 
+
+## TATA CARA PENGGUNAAN / TUTORIAL
+
+Tutorial bisa di lihat pada dokumen [TUTORIAL.md](./docs/TUTORIAL.md).
 
 ## DOKUMENTASI
 
