@@ -18,7 +18,7 @@
 ## FITUR APLIKASI
 
 <div align="center">
-<h3>Memudahkan eksplorasi data hujan harian yang dimiliki</h3>
+<h3>Memudahkan eksplorasi stasiun hujan yang tersedia di database</h3>
 <img src="./_readme/fkstations-ft-01-loop.gif" width="450">
 <br>
 <span align="center">Navigasi dan Interaksi Peta</span>
