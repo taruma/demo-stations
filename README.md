@@ -8,7 +8,11 @@
 <img alt="License" src="https://img.shields.io/github/license/fiakoenjiniring/demo-stations.svg">
 <br>
 <img alt="GitHub release" src="https://img.shields.io/github/release/fiakoenjiniring/demo-stations.svg?logo=github">
-<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/fiakoenjiniring/demo-stations.svg?logo=github">
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/fiakoenjiniring/demo-stations.svg?logo=github"><br>
+
+<a href="https://github.com/fiakoenjiniring/demo-stations" target="_blank"><strong>Github Repository</strong></a> // <code>fiakoenjiniring/demo-stations</code><br>
+<a href="https://demo-stations.dev.fiako.engineering" target="_blank"><strong>Aplikasi</strong></a> // <code>demo-stations.dev.fiako.engineering</code><br>
+<a href="https://youtu.be/36fYysfJSxo" target="_blank"><strong>Presentasi & Demonstrasi</strong></a>
 </div>
 
 **Rainfall Stations Explorer** atau `fiako-stations` adalah aplikasi web atau dashboard yang dapat digunakan untuk mengeksplorasi data hujan harian yang tersedia di database. Dari aplikasi ini dapat memperoleh informasi kelengkapan data dan akusisi data hujan harian dengan mudah dan cepat.
