@@ -38,9 +38,20 @@ ALERT_INFO = dbc.Alert(
     class_name="text-center fw-bold",
 )
 
+ALERT_DATA = dbc.Alert(
+    [
+        "DATA YANG DITAMPILKAN DISINI BUKANLAH DATA ASLI.",
+        html.Br(),
+        "Data ini dibangkitkan secara acak dan lokasi stasiun ditentukan secara sembarang.",
+    ],
+    color="warning",
+    class_name="text-center fw-bold fs-5",
+)
+
 HTML_INFO = html.Div(
     [
         ALERT_INFO,
+        ALERT_DATA,
     ],
     className="mt-3",
 )
