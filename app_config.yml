@@ -8,7 +8,7 @@ TEMPLATE:
   SHOW_LEGEND_INSIDE: False
   THEME: BOOTSTRAP
 
-VERSION: v3.0.0
+VERSION: v3.0.1
 GITHUB_LINK: https://github.com/fiakoenjiniring/demo-stations
 GITHUB_REPO: fiakoenjiniring/demo-stations
 
