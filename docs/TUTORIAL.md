@@ -12,7 +12,7 @@ __Source:__ [Tango](https://app.tango.us/app/workflow/7cab5577-5fdb-4b70-8b81-79
 
 ***
 
-### 1. [Buka Situs Rainfall Stations Explorer (fiako-stations / fiako-demo-stations)](https://demo-stations.dev.fiako.engineering/)
+### 1. [Buka Situs Rainfall Stations Explorer (fiako-stations / fiako-demo-stations)](https://fiako-demo-stations.herokuapp.com/)
 
 
 ### 2. Eksplorasi Peta "Rainfall Stations"

@@ -11,7 +11,7 @@
 <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/fiakoenjiniring/demo-stations.svg?logo=github"><br>
 
 <a href="https://github.com/fiakoenjiniring/demo-stations" target="_blank"><strong>Github Repository</strong></a> // <code>fiakoenjiniring/demo-stations</code><br>
-<a href="https://demo-stations.dev.fiako.engineering" target="_blank"><strong>Aplikasi</strong></a> // <code>demo-stations.dev.fiako.engineering</code><br>
+<a href="https://fiako-demo-stations.herokuapp.com" target="_blank"><strong>Aplikasi</strong></a> // <code>fiako-demo-stations.herokuapp.com</code><br>
 <a href="https://youtu.be/36fYysfJSxo" target="_blank"><strong>Presentasi & Demonstrasi</strong></a>
 </div>
 
