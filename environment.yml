@@ -1,0 +1,18 @@
+name: fiako-stations
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.13
+  - pandas=1.5.1
+  - dash=2.7.0
+  - dash-auth=1.4.1
+  - dash-bootstrap-components=1.2.1
+  - plotly=5.11.0
+  - geopy=2.3.0
+  - python-box=6.1.0
+  - pyyaml=6.0
+  - pytables=3.7.0
+  - pip
+  - pip:
+    - dash-bootstrap-templates==1.0.7
