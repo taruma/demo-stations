@@ -40,9 +40,23 @@ ALERT_INFO = dbc.Alert(
 
 ALERT_DATA = dbc.Alert(
     [
-        "DATA YANG DITAMPILKAN DISINI BUKANLAH DATA ASLI.",
+        "Data yang ditampilkan berasal dari DATASET KAGGLE.",
         html.Br(),
-        "Data ini dibangkitkan secara acak dan lokasi stasiun ditentukan secara sembarang.",
+        "Informasi dataset Kaggle bisa dilihat di ",
+        html.A(
+            "greegtitan/indonesia-climate",
+            href="https://www.kaggle.com/datasets/greegtitan/indonesia-climate",
+            target="_blank",
+        ),
+        ". Dengan data HDF5 dari ",
+        html.A(
+            "sini",
+            href="https://www.kaggle.com/code/tarumainfo/compile-rainfall-dataset-to-hdf5",
+            target="_blank",
+        ),
+        ".",
+        html.Br(),
+        "Dengan perubahan ini, maka opsi download metadata/rainfall dimatikan."
     ],
     color="warning",
     class_name="text-center fw-bold",
@@ -355,6 +369,7 @@ HTML_ROW_BUTTON_DOWNLOAD = dbc.Container(
                     size="lg",
                     color="info",
                     class_name="mx-3",
+                    disabled=True,
                 ),
                 dcc.Download(id="download-metadata-stations"),
                 dbc.Button(
