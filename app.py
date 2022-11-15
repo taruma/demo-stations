@@ -247,7 +247,7 @@ def callback_update_years(stations):
     return (
         pylayoutfunc.create_rangeslider(stations, combined_metadata_rr),
         False if stations else True,
-        False if stations else True,
+        True,
     )
 
 

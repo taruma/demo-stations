@@ -1,54 +1,174 @@
 id,station_name,latitude,longitude,key,filename,title,rel_folder,date_start,date_end
-A_46550,Prince Of Wales West,-6.37830266,106.7507353,/stations/staA_46550,comp_data_hujan_data_A.h5,data_A,data\completeness,1994-01-01,2021-12-01
-A_14778,Gordon Ridge,-6.20667121,106.4330345,/stations/staA_14778,comp_data_hujan_data_A.h5,data_A,data\completeness,1982-01-01,2021-12-01
-A_46803,Dark Glen,-6.37465093,106.5206761,/stations/staA_46803,comp_data_hujan_data_A.h5,data_A,data\completeness,2010-01-01,2021-12-01
-A_32558,Colliers Yard,-6.24318854,106.6813524,/stations/staA_32558,comp_data_hujan_data_A.h5,data_A,data\completeness,2019-01-01,2021-12-01
-A_14364,Ellavale Road,-6.27970587,106.1920201,/stations/staA_14364,comp_data_hujan_data_A.h5,data_A,data\completeness,1994-01-01,2021-12-01
-A_90807,Marsden Springs,-6.14459175,106.5279796,/stations/staA_90807,comp_data_hujan_data_A.h5,data_A,data\completeness,1985-01-01,2021-12-01
-A_90690,Hythe Passage,-6.14459175,106.2431444,/stations/staA_90690,comp_data_hujan_data_A.h5,data_A,data\completeness,2004-01-01,2021-12-01
-A_85654,Great Gibcracks Chase,-6.17745735,106.7726457,/stations/staA_85654,comp_data_hujan_data_A.h5,data_A,data\completeness,1985-01-01,2021-12-01
-A_71589,Ventnor Hills,-6.19936774,107.0538291,/stations/staA_71589,comp_data_hujan_data_A.h5,data_A,data\completeness,1973-01-01,2021-12-01
-A_76130,Clayhall Road,-6.360044,106.8858494,/stations/staA_76130,comp_data_hujan_data_A.h5,data_A,data\completeness,1976-01-01,2021-12-01
-A_26994,Halstead Pastures,-6.57184452,107.1086051,/stations/staA_26994,comp_data_hujan_data_A.h5,data_A,data\completeness,1972-01-01,2021-12-01
-A_91603,Steble Street,-6.4038648,107.192595,/stations/staA_91603,comp_data_hujan_data_A.h5,data_A,data\completeness,1978-01-01,2021-12-01
-A_56258,Coxford Close,-6.7471277,107.2911918,/stations/staA_56258,comp_data_hujan_data_A.h5,data_A,data\completeness,2010-01-01,2021-12-01
-A_25290,Althorpe Place,-6.54628239,107.506644,/stations/staA_25290,comp_data_hujan_data_A.h5,data_A,data\completeness,2010-01-01,2021-12-01
-A_68689,College Field Close,-6.76173464,107.1487742,/stations/staA_68689,comp_data_hujan_data_A.h5,data_A,data\completeness,1996-01-01,2021-12-01
-A_33130,Grange Crescent,-6.91967209,107.5732882,/stations/staA_33130,comp_data_hujan_data_A.h5,data_A,data\completeness,2010-01-01,2021-12-01
-A_81845,St Nicholas Strand,-6.89410996,107.6335418,/stations/staA_81845,comp_data_hujan_data_A.h5,data_A,data\completeness,2010-01-01,2021-12-01
-A_28998,Southlands Willows,-6.85028916,107.6116314,/stations/staA_28998,comp_data_hujan_data_A.h5,data_A,data\completeness,1985-01-01,2021-12-01
-A_71011,Venom Road,-6.84663743,107.6335418,/stations/staA_71011,comp_data_hujan_data_A.h5,data_A,data\completeness,1976-01-01,2021-12-01
-A_44708,Bevan Grange,-6.8073813,107.6928824,/stations/staA_44708,comp_data_hujan_data_A.h5,data_A,data\completeness,1975-01-01,2021-12-01
-A_34667,Chance Croft,-6.94523422,107.7193575,/stations/staA_34667,comp_data_hujan_data_A.h5,data_A,data\completeness,2014-01-01,2021-12-01
-A_11834,Thorne Cottages,-6.86398316,107.781437,/stations/staA_11834,comp_data_hujan_data_A.h5,data_A,data\completeness,1997-01-01,2021-12-01
-A_27036,Hayfield Estate,-6.98631622,107.7869146,/stations/staA_27036,comp_data_hujan_data_A.h5,data_A,data\completeness,1982-01-01,2021-12-01
-A_58726,Woodcock Nook,-7.00913955,107.6180219,/stations/staA_58726,comp_data_hujan_data_A.h5,data_A,data\completeness,2010-01-01,2021-12-01
-A_61972,Eldon Woodlands,-7.10408461,107.507557,/stations/staA_61972,comp_data_hujan_data_A.h5,data_A,data\completeness,1981-01-01,2021-12-01
-A_30365,Cottage Acre,-7.17803221,107.5705494,/stations/staA_30365,comp_data_hujan_data_A.h5,data_A,data\completeness,1980-01-01,2021-12-01
-A_75822,Homefield Buildings,-7.09951995,107.6317159,/stations/staA_75822,comp_data_hujan_data_A.h5,data_A,data\completeness,2010-01-01,2021-12-01
-A_33749,Webster Boulevard,-7.07304488,107.7421808,/stations/staA_33749,comp_data_hujan_data_A.h5,data_A,data\completeness,1975-01-01,2021-12-01
-A_68352,Harrier Corner,-6.99909729,107.863601,/stations/staA_68352,comp_data_hujan_data_A.h5,data_A,data\completeness,2016-01-01,2021-12-01
-A_45512,Webster Gait,-6.92058502,107.8435164,/stations/staA_45512,comp_data_hujan_data_A.h5,data_A,data\completeness,1997-01-01,2021-12-01
-A_29582,Sewell Road,-6.87767716,107.8416906,/stations/staA_29582,comp_data_hujan_data_A.h5,data_A,data\completeness,1982-01-01,2021-12-01
-A_32481,Cranmer Covert,-6.23679801,106.590972,/stations/staA_32481,comp_data_hujan_data_A.h5,data_A,data\completeness,1971-01-01,2021-12-01
-A_82859,Bridge Street Lane,-6.42303639,107.014573,/stations/staA_82859,comp_data_hujan_data_A.h5,data_A,data\completeness,2013-01-01,2021-12-01
-B_19074,Ashurst Cedars,-0.68798961,100.2442599,/stations/staB_19074,comp_data_hujan_data_B.h5,data_B,data\completeness,1983-01-01,2021-12-01
-B_65620,Hopton Lodge,-0.72815867,100.3629412,/stations/staB_65620,comp_data_hujan_data_B.h5,data_B,data\completeness,2017-01-01,2021-12-01
-B_62363,Rochester Brook,-0.90891946,100.4140655,/stations/staB_62363,comp_data_hujan_data_B.h5,data_B,data\completeness,1982-01-01,2021-12-01
-B_55746,Ruskin Moorings,-0.54922375,100.421369,/stations/staB_55746,comp_data_hujan_data_B.h5,data_B,data\completeness,2017-01-01,2021-12-01
-B_39119,Britannia Causeway,-0.42141309,100.3172946,/stations/staB_39119,comp_data_hujan_data_B.h5,data_B,data\completeness,1991-01-01,2021-12-01
-B_31613,Aberdeen Ridings,-0.27716964,100.3848516,/stations/staB_31613,comp_data_hujan_data_B.h5,data_B,data\completeness,1985-01-01,2021-12-01
-B_78038,Magpie Wharf,-1.09150611,100.3958068,/stations/staB_78038,comp_data_hujan_data_B.h5,data_B,data\completeness,1993-01-01,2021-12-01
-B_83867,Watery Park,-0.93265572,100.406762,/stations/staB_83867,comp_data_hujan_data_B.h5,data_B,data\completeness,2014-01-01,2021-12-01
-C_55635,Rathlyn Avenue,-6.51024962,106.8021788,/stations/staC_55635,comp_data_hujan_data_C.h5,data_C,data\completeness,2010-01-01,2021-12-01
-C_99014,Hunters Garden,-6.64147716,107.1873402,/stations/staC_99014,comp_data_hujan_data_C.h5,data_C,data\completeness,2010-01-01,2021-12-01
-C_57461,Broadlands Green,-6.51706663,107.2350593,/stations/staC_57461,comp_data_hujan_data_C.h5,data_C,data\completeness,2010-01-01,2021-12-01
-C_49756,Bay View Close,-6.57841977,106.883983,/stations/staC_49756,comp_data_hujan_data_C.h5,data_C,data\completeness,1982-01-01,2021-12-01
-C_92288,Daffodil Moor,-6.47957305,107.4497953,/stations/staC_92288,comp_data_hujan_data_C.h5,data_C,data\completeness,1980-01-01,2021-12-01
-C_92853,Foster Lawns,-6.81019829,107.4753591,/stations/staC_92853,comp_data_hujan_data_C.h5,data_C,data\completeness,1977-01-01,2021-12-01
-C_16911,Honey Newydd,-6.58523679,107.6986163,/stations/staC_16911,comp_data_hujan_data_C.h5,data_C,data\completeness,2007-01-01,2021-12-01
-C_90475,Golf Mews,-6.96017263,107.649193,/stations/staC_90475,comp_data_hujan_data_C.h5,data_C,data\completeness,1984-01-01,2021-12-01
-C_12497,Brunel Walk,-6.97380666,107.6287419,/stations/staC_12497,comp_data_hujan_data_C.h5,data_C,data\completeness,1987-01-01,2021-12-01
-C_31099,Lucorn Close,-6.97721517,107.5895441,/stations/staC_31099,comp_data_hujan_data_C.h5,data_C,data\completeness,1984-01-01,2021-12-01
-C_32565,Copse View,-6.86643867,107.7258844,/stations/staC_32565,comp_data_hujan_data_C.h5,data_C,data\completeness,1982-01-01,2021-12-01
-C_99186,Pine Tree West,-6.62954739,107.6116994,/stations/staC_99186,comp_data_hujan_data_C.h5,data_C,data\completeness,1974-01-01,2021-12-01
+kg_96001,Stasiun Meteorologi Maimun Saleh,5.87655,95.33785,/stations/stakg_96001,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96009,Stasiun Meteorologi Malikussaleh,5.22869,96.94749,/stations/stakg_96009,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96011,Stasiun Meteorologi Sultan Iskandar Muda,5.52244,95.417,/stations/stakg_96011,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96015,Stasiun Meteorologi Cut Nyak Dhien Nagan Raya,4.04928,96.24796,/stations/stakg_96015,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96017,Stasiun Klimatologi Aceh,5.404,95.464,/stations/stakg_96017,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96031,Stasiun Klimatologi Sumatera Utara,3.62114,98.71485,/stations/stakg_96031,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96033,Stasiun Meteorologi Maritim Belawan,3.78824,98.71492,/stations/stakg_96033,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96035,Stasiun Meteorologi Kualanamu,3.64573,98.88488,/stations/stakg_96035,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96037,Stasiun Geofisika Deli Serdang,3.501,98.56,/stations/stakg_96037,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96039,Stasiun Geofisika Aceh Selatan,3.17333,97.28637,/stations/stakg_96039,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2017-11-01
+kg_96041,Balai Besar Meteorologi Klimatologi dan Geofisika Wilayah I,3.5397,98.64,/stations/stakg_96041,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96043,Stasiun Meteorologi Silangit,2.26136,98.99357,/stations/stakg_96043,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2020-04-01,2020-12-01
+kg_96071,Stasiun Meteorologi Aek Godang,1.55,99.45,/stations/stakg_96071,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96073,Stasiun Meteorologi FL Tobing,1.55,98.88,/stations/stakg_96073,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96075,Stasiun Meteorologi Binaka,1.1649,97.7036,/stations/stakg_96075,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96077,Stasiun Geofisika Gunungsitoli,1.3,97.58,/stations/stakg_96077,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2014-01-01,2020-12-01
+kg_96087,Stasiun Meteorologi Hang Nadim,1.11667,104.11667,/stations/stakg_96087,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96089,Stasiun Meteorologi Raja Haji Abdullah ,1.03,103.38,/stations/stakg_96089,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96091,Stasiun Meteorologi Raja Haji Fisabilillah,0.9227,104.5289,/stations/stakg_96091,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96107,Stasiun Klimatologi Riau,0.407,101.217,/stations/stakg_96107,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2017-01-01,2020-12-01
+kg_96109,Stasiun Meteorologi Sultan Syarif Kasim II,0.45924,101.44743,/stations/stakg_96109,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96145,Stasiun Meteorologi Tarempa,3.2,106.25,/stations/stakg_96145,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96147,Stasiun Meteorologi Ranai,3.91206,108.39,/stations/stakg_96147,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96161,Stasiun Meteorologi Maritim Teluk Bayur,-0.99639,100.37222,/stations/stakg_96161,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96163,Stasiun Meteorologi Minangkabau,-0.79355,100.28917,/stations/stakg_96163,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96165,Stasiun Geofisika Padang Panjang,-0.4663,100.3797,/stations/stakg_96165,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96167,Stasiun Klimatologi Sumatera Barat,-0.54549,100.29786,/stations/stakg_96167,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96169,Stasiun Pemantau Atmosfer Global Bukit Koto Tabang,-0.2505,100.3823,/stations/stakg_96169,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2016-01-01,2020-12-01
+kg_96171,Stasiun Meteorologi Japura,-0.33,102.32,/stations/stakg_96171,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96179,Stasiun Meteorologi Dabo ,-0.48,104.58,/stations/stakg_96179,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96191,Stasiun Klimatologi Jambi,-1.6019,103.48444,/stations/stakg_96191,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96195,Stasiun Meteorologi Sultan Thaha,-1.63368,103.64,/stations/stakg_96195,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96207,Stasiun Meteorologi Depati Parbo,-2.083,101.45,/stations/stakg_96207,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96221,Stasiun Meteorologi Sultan Mahmud Badaruddin II,-2.89468,104.70129,/stations/stakg_96221,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96223,Stasiun Klimatologi Sumatera Selatan,-2.92732,104.77197,/stations/stakg_96223,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96237,Stasiun Meteorologi Depati Amir,-2.17,106.13,/stations/stakg_96237,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96239,Stasiun Klimatologi Bangka Belitung,-2.518,106.422,/stations/stakg_96239,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2017-01-01,2020-12-01
+kg_96247,Stasiun Geofisika Tanjung Pandan,-2.7575,107.65,/stations/stakg_96247,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2019-04-01
+kg_96249,Stasiun Meteorologi H. AS. Hanandjoeddin,-2.75,107.75,/stations/stakg_96249,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96253,Stasiun Meteorologi Fatmawati Soekarno,-3.8582,102.3367,/stations/stakg_96253,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96255,Stasiun Klimatologi Bengkulu,-3.8652,102.3119,/stations/stakg_96255,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96257,Stasiun Geofisika Kepahiang,-3.55,102.589,/stations/stakg_96257,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96291,Stasiun Klimatologi Lampung,-5.17236,105.18,/stations/stakg_96291,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96293,Stasiun Meteorologi Maritim Panjang,-5.4721,105.321,/stations/stakg_96293,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96295,Stasiun Meteorologi Radin Inten II,-5.16,105.11,/stations/stakg_96295,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96297,Stasiun Geofisika Lampung Utara,-4.83631,104.87,/stations/stakg_96297,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96503,Stasiun Meteorologi Nunukan,4.13,117.67,/stations/stakg_96503,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96505,Stasiun Meteorologi Yuvai Semaring,3.86,115.68,/stations/stakg_96505,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96509,Stasiun Meteorologi Juwata,3.33,117.57,/stations/stakg_96509,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96525,Stasiun Meteorologi Tanjung Harapan,2.5,117.22,/stations/stakg_96525,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96529,Stasiun Meteorologi Kalimarau ,2.14562,117.43375,/stations/stakg_96529,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96535,Stasiun Meteorologi Paloh,1.74,109.3,/stations/stakg_96535,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96557,Stasiun Meteorologi Nangapinoh,-0.42,111.47,/stations/stakg_96557,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96559,Stasiun Meteorologi Tebelian,0.06,111.47,/stations/stakg_96559,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96565,Stasiun Meteorologi Pangsuma,0.84,112.93,/stations/stakg_96565,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96581,Stasiun Meteorologi Supadio,-0.14206,109.45,/stations/stakg_96581,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96583,Stasiun Klimatologi Kalimantan Barat,0.075,109.19,/stations/stakg_96583,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96585,Stasiun Meteorologi Maritim Pontianak,-0.03,109.34,/stations/stakg_96585,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96595,Stasiun Meteorologi Beringin,-0.56,114.53,/stations/stakg_96595,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96607,Stasiun Meteorologi Aji Pangeran Tumenggung Pranoto,-0.48,117.16,/stations/stakg_96607,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96615,Stasiun Meteorologi Rahadi Oesman,-1.8,109.97,/stations/stakg_96615,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96633,Stasiun Meteorologi Sultan Aji Muhammad Sulaiman Sepinggan,-1.26,116.9,/stations/stakg_96633,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96635,Stasiun Geofisika Balikpapan,-1.2553,116.91463,/stations/stakg_96635,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2013-07-01,2013-07-01
+kg_96645,Stasiun Meteorologi Iskandar,-2.73,111.66,/stations/stakg_96645,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96651,Stasiun Meteorologi H. Asan,-2.55,112.93,/stations/stakg_96651,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96653,Stasiun Meteorologi Sanggu,-1.67,114.9,/stations/stakg_96653,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96655,Stasiun Meteorologi Tjilik Riwut,-2.22,113.95,/stations/stakg_96655,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96685,Stasiun Meteorologi Syamsudin Noor,-3.442,114.754,/stations/stakg_96685,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96687,Stasiun Klimatologi Kalimantan Selatan,-3.46225,114.84,/stations/stakg_96687,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96695,Stasiun Meteorologi Gusti Syamsir Alam,-3.3,116.17,/stations/stakg_96695,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96733,Stasiun Klimatologi Banten,-6.26151,106.75084,/stations/stakg_96733,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96735,Stasiun Geofisika Tangerang,-6.1,106.38,/stations/stakg_96735,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96737,Stasiun Meteorologi Maritim Serang,-6.11185,106.11,/stations/stakg_96737,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96739,Stasiun Meteorologi Budiarto,-6.2867,106.56389,/stations/stakg_96739,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96741,Stasiun Meteorologi Maritim Tanjung Priok,-6.10781,106.88053,/stations/stakg_96741,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96745,Stasiun Meteorologi Kemayoran,-6.15559,106.84,/stations/stakg_96745,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96747,Halim Perdana Kusuma Jakarta,-6.27036,106.88926,/stations/stakg_96747,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2018-12-01
+kg_96749,Stasiun Meteorologi Soekarno Hatta,-6.12,106.65,/stations/stakg_96749,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96751,Stasiun Meteorologi Citeko,-6.7,106.85,/stations/stakg_96751,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96753,Stasiun Klimatologi Jawa Barat,-6.5,106.75,/stations/stakg_96753,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96783,Stasiun Geofisika Bandung,-6.88356,107.59733,/stations/stakg_96783,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96791,Stasiun Meteorologi Kertajati,-6.7344,108.263,/stations/stakg_96791,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96793,Pos Meteorologi Penggung,-6.7553,108.53904,/stations/stakg_96793,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2016-01-01,2020-12-01
+kg_96797,Stasiun Meteorologi Maritim Tegal,-6.86817,109.12103,/stations/stakg_96797,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96805,Stasiun Meteorologi Tunggul Wulung,-7.7189,109.0149,/stations/stakg_96805,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96807,Stasiun Geofisika Banjarnegara,-7.333,109.7069,/stations/stakg_96807,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2015-01-01,2020-12-01
+kg_96835,Stasiun Klimatologi Jawa Tengah,-6.9847,110.3812,/stations/stakg_96835,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96837,Stasiun Meteorologi Maritim Tanjung Emas,-6.9486,110.4199,/stations/stakg_96837,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96839,Stasiun Meteorologi Ahmad Yani,-6.97683,110.3778,/stations/stakg_96839,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96851,Stasiun Klimatologi DI Yogyakarta,-7.731,110.354,/stations/stakg_96851,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2017-01-01,2020-12-01
+kg_96855,Stasiun Geofisika Sleman,-7.82,110.3,/stations/stakg_96855,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96925,Stasiun Meteorologi Sangkapura,-5.8511,112.6578,/stations/stakg_96925,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96933,Stasiun Meteorologi Perak I,-7.2236,112.7239,/stations/stakg_96933,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96935,Stasiun Meteorologi Juanda,-7.3846,112.7833,/stations/stakg_96935,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96937,Stasiun Meteorologi Maritim Tanjung Perak,-7.2053,112.7353,/stations/stakg_96937,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96939,Stasiun Meteorologi Tuban,-6.8229,111.99177,/stations/stakg_96939,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2017-01-01,2020-12-01
+kg_96943,Stasiun Klimatologi Jawa Timur,-7.9008,112.5979,/stations/stakg_96943,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96945,Stasiun Geofisika Pasuruan,-7.70456,112.63533,/stations/stakg_96945,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96949,Stasiun Geofisika Malang,-8.15,112.45,/stations/stakg_96949,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96973,Stasiun Meteorologi Trunojoyo,-7.03976,113.914,/stations/stakg_96973,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96975,Stasiun Geofisika Nganjuk,-7.73486,111.76682,/stations/stakg_96975,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_96987,Stasiun Meteorologi Banyuwangi,-8.215,114.3553,/stations/stakg_96987,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97008,Stasiun Meteorologi Naha,3.68594,125.52881,/stations/stakg_97008,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97010,Stasiun Geofisika Manado,1.4434,124.8389,/stations/stakg_97010,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97012,Stasiun Klimatologi Sulawesi Utara,1.54585,124.9233,/stations/stakg_97012,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97014,Stasiun Meteorologi Sam Ratulangi,1.54575,124.9234,/stations/stakg_97014,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97016,Stasiun Meteorologi Maritim Bitung,1.4431,125.1797,/stations/stakg_97016,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97028,Stasiun Meteorologi Sultan Bantilan,1.12114,120.79433,/stations/stakg_97028,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97048,Stasiun Meteorologi Djalaluddin,0.6385,122.8525,/stations/stakg_97048,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97052,Stasiun Klimatologi Gorontalo,0.556,123.14,/stations/stakg_97052,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2017-11-01,2020-12-01
+kg_97072,Stasiun Meteorologi Mutiara Sis-Al Jufri,-0.91589,119.90554,/stations/stakg_97072,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97086,Stasiun Meteorologi Syukuran Aminudin Amir,-1.04064,122.771,/stations/stakg_97086,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97096,Stasiun Meteorologi Kasiguncu,-1.42038,120.65701,/stations/stakg_97096,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97120,Stasiun Meteorologi Majene,-3.55074,118.98054,/stations/stakg_97120,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97124,Stasiun Meteorologi Toraja,-3.04524,119.81885,/stations/stakg_97124,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97126,Stasiun Meteorologi Andi Jemma,-2.55472,120.32422,/stations/stakg_97126,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97142,Stasiun Meteorologi Sangia Ni Bandera,-4.18059,121.61077,/stations/stakg_97142,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97144,Stasiun Meteorologi Maritim Kendari,-3.9701,122.5895,/stations/stakg_97144,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97150,Stasiun Klimatologi Sulawesi Tenggara,-4.056,122.449,/stations/stakg_97150,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2017-01-01,2020-12-01
+kg_97180,Stasiun Meteorologi Sultan Hasanuddin,-5.07,119.55,/stations/stakg_97180,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97182,Stasiun Meteorologi Maritim Paotere,-5.11375,119.41983,/stations/stakg_97182,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97184,Stasiun Klimatologi Sulawesi Selatan,-4.9308,119.572,/stations/stakg_97184,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97192,Stasiun Meteorologi Beto Ambari,-5.47,122.62,/stations/stakg_97192,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97230,Stasiun Meteorologi I Gusti Ngurah Rai ,-8.75,115.17,/stations/stakg_97230,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97232,Stasiun Geofisika Denpasar,-8.67689,115.21,/stations/stakg_97232,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97234,Pos Pengamatan Kahang-Kahang,-8.365,115.61083,/stations/stakg_97234,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97236,Stasiun Klimatologi Bali,-8.341,114.6176,/stations/stakg_97236,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97240,Stasiun Meteorologi Zainuddin Abdul Madjid,-8.75277,116.24982,/stations/stakg_97240,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97242,Stasiun Klimatologi Nusa Tenggara Barat,-8.63627,116.17094,/stations/stakg_97242,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97260,Stasiun Meteorologi Sultan Muhammad Kaharuddin,-8.48845,117.41336,/stations/stakg_97260,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97270,Stasiun Meteorologi Sultan Muhammad Salahuddin,-8.54279,118.6928,/stations/stakg_97270,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97282,Stasiun Meteorologi Komodo,-8.48673,119.88683,/stations/stakg_97282,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97284,Stasiun Meteorologi Frans Sales Lega,-8.63,120.45,/stations/stakg_97284,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97300,Stasiun Meteorologi Fransiskus Xaverius Seda,-8.63577,122.23752,/stations/stakg_97300,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97310,Stasiun Meteorologi Gewayantana,-8.2752,122.9986,/stations/stakg_97310,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97320,Stasiun Meteorologi Mali,-8.13471,124.59,/stations/stakg_97320,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97340,Stasiun Meteorologi Umbu Mehang Kunda,-9.66944,120.29972,/stations/stakg_97340,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97372,Stasiun Meteorologi Eltari,-10.1678,123.67039,/stations/stakg_97372,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97374,Stasiun Klimatologi Nusa Tenggara Timur,-10.13861,123.66722,/stations/stakg_97374,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97378,Stasiun Meteorologi David Constatijn Saudale,-10.76662,123.07395,/stations/stakg_97378,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97380,Stasiun Meteorologi Tardamu,-10.5,121.83,/stations/stakg_97380,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97406,Stasiun Meteorologi Gamar Malamo,1.84092,127.7905,/stations/stakg_97406,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97430,Stasiun Meteorologi Sultan Babullah,0.8333,127.38,/stations/stakg_97430,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97460,Stasiun Meteorologi Oesman Sadik,-0.63784,127.5,/stations/stakg_97460,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97502,Stasiun Meteorologi Domine Eduard Osok,-0.89118,131.28575,/stations/stakg_97502,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97530,Stasiun Meteorologi Rendani,-0.89227,134.05041,/stations/stakg_97530,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97560,Stasiun Meteorologi Frans Kaisiepo,-1.19069,136.10361,/stations/stakg_97560,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97570,Stasiun Meteorologi Sudjarwo Tjondro Negoro,-1.8754,136.23994,/stations/stakg_97570,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97580,Stasiun Meteorologi Mararena,-1.85,138.75,/stations/stakg_97580,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2011-01-01,2020-12-01
+kg_97600,Stasiun Meteorologi Emalamo,-2.05,126.0,/stations/stakg_97600,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97630,Stasiun Meteorologi Torea,-2.91938,132.26496,/stations/stakg_97630,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97682,Stasiun Meteorologi Nabire,-3.3521,135.52,/stations/stakg_97682,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97686,Stasiun Meteorologi Wamena Jaya Wijaya,-4.08861,138.94639,/stations/stakg_97686,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97690,Stasiun Meteorologi Sentani,-2.57,140.48,/stations/stakg_97690,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97692,Stasiun Klimatologi Jayapura,-2.59231,140.16792,/stations/stakg_97692,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2013-01-01,2020-12-01
+kg_97694,Stasiun Klimatologi Papua Barat,-1.47,134.19,/stations/stakg_97694,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97698,Stasiun Meteorologi Dok II Jayapura,-2.53,140.72,/stations/stakg_97698,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97700,Stasiun Meteorologi Namlea,-3.25,127.08,/stations/stakg_97700,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97722,Stasiun Meteorologi Amahai,-3.3464,128.9284,/stations/stakg_97722,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97724,Stasiun Meteorologi Pattimura,-3.7114,128.0957,/stations/stakg_97724,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97726,Stasiun Klimatologi Maluku,-3.25,128.4,/stations/stakg_97726,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97728,Stasiun Geofisika Ambon,-3.69,128.19,/stations/stakg_97728,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2013-11-01,2013-11-01
+kg_97730,Stasiun Meteorologi Maritim Ambon,-3.79053,128.10075,/stations/stakg_97730,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2019-09-01,2020-12-01
+kg_97748,Stasiun Meteorologi Kuffar,-3.8813,130.88,/stations/stakg_97748,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97760,Stasiun Meteorologi Utarom,-3.67,133.75,/stations/stakg_97760,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2013-07-01,2020-12-01
+kg_97780,Stasiun Meteorologi Enarotali,-3.92688,136.38,/stations/stakg_97780,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97790,Stasiun Meteorologi Bandaneira,-4.52338,129.9043,/stations/stakg_97790,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97796,Stasiun Meteorologi Mozez Kilangin,-4.53006,136.89348,/stations/stakg_97796,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97810,Stasiun Meteorologi Karel Sadsuitubun,-5.6637,132.7362,/stations/stakg_97810,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97876,Stasiun Meteorologi Tanah Merah,-6.1,140.31,/stations/stakg_97876,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97900,Stasiun Meteorologi Mathilda Batlayeri,-7.98,131.3,/stations/stakg_97900,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
+kg_97978,Stasiun Klimatologi Merauke,-8.387,140.517,/stations/stakg_97978,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2019-01-01,2020-12-01
+kg_97980,Stasiun Meteorologi Mopah,-8.52019,140.41568,/stations/stakg_97980,comp_kaggle_rainfall.h5,Kaggle,data\completeness,2010-01-01,2020-12-01
