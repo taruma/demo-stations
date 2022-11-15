@@ -48,24 +48,8 @@ ALERT_DATA = dbc.Alert(
     class_name="text-center fw-bold",
 )
 
-ALERT_END_OF_ONLINE_SERVICE = dbc.Alert(
-    [
-        "Layanan online aplikasi fiakodev akan dihentikan pada November 2022. ",
-        html.Br(),
-        "Baca ",
-        html.A(
-            "logs: layanan online aplikasi fiakodev akan dihentikan",
-            href="https://dev.fiako.engineering/logs/layanan-online-aplikasi-fiakodev",
-            target="_blank",
-        ),
-        " untuk informasi lebih lengkap.",
-    ],
-    color="danger",
-    className="text-center fw-bold fs-5",
-)
-
 HTML_INFO = html.Div(
-    [ALERT_INFO, ALERT_DATA, ALERT_END_OF_ONLINE_SERVICE],
+    [ALERT_INFO, ALERT_DATA],
     className="mt-3",
 )
 
