@@ -4,7 +4,7 @@ DASH_APP:
   DEBUG: False
 
 TEMPLATE:
-  WATERMARK_SOURCE: https://raw.githubusercontent.com/fiakoenjiniring/static-assets/main/logo/fiakodev-logo-simple-1000-400.png
+  WATERMARK_SOURCE: 
   SHOW_LEGEND_INSIDE: False
   THEME: BOOTSTRAP
 
