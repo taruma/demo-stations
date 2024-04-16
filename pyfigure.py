@@ -166,12 +166,23 @@ def generate_station_map_figure(stations_location: pd.DataFrame) -> go.Figure:
     return go.Figure(data, layout)
 
 
-def figure_map_coordinate(
+def generate_nearest_stations_map(
     point_coordinate: str,
     name_coordinate: str,
-    df_with_distance: pd.DataFrame,
+    nearest_stations_df: pd.DataFrame,
 ) -> go.Figure:
-    """FIGURE MAP OF COORDINATE AND NEAREST STATIONS"""
+    """
+    Generate a scattermapbox figure showing the nearest stations to a given point.
+
+    Args:
+        point_coordinate (str): The coordinates of the point of interest.
+        name_coordinate (str): The name of the point of interest.
+        nearest_stations_df (pd.DataFrame):
+            A DataFrame containing information about the nearest stations.
+
+    Returns:
+        go.Figure: A scattermapbox figure showing the nearest stations and the point of interest.
+    """
 
     point_coordinate = Point(point_coordinate)
 
@@ -182,22 +193,22 @@ def figure_map_coordinate(
         )
 
     opacity_stations = (
-        normalize(df_with_distance.distance, LOWEST_OPACITY, HIGHEST_OPACITY)[::-1]
-        if len(df_with_distance) > 1
+        normalize(nearest_stations_df.distance, LOWEST_OPACITY, HIGHEST_OPACITY)[::-1]
+        if len(nearest_stations_df) > 1
         else [HIGHEST_OPACITY]
     )
 
     data = [
         go.Scattermapbox(
-            lat=df_with_distance.latitude,
-            lon=df_with_distance.longitude,
-            text=df_with_distance.station_name,
+            lat=nearest_stations_df.latitude,
+            lon=nearest_stations_df.longitude,
+            text=nearest_stations_df.station_name,
             textposition="bottom right",
             texttemplate="%{customdata[0]}<br>%{text}<br>%{customdata[1]:.3f} km",
             customdata=np.stack(
                 [
-                    df_with_distance.index,
-                    df_with_distance.distance,
+                    nearest_stations_df.index,
+                    nearest_stations_df.distance,
                 ],
                 axis=-1,
             ),

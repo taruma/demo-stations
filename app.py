@@ -161,7 +161,7 @@ def callback_plot_coordinate(
             .iloc[:n_nearest]
         )
 
-        fig = pyfigure.figure_map_coordinate(
+        fig = pyfigure.generate_nearest_stations_map(
             point_coordinate, name_coordinate, df_nearest_stations
         )
 
