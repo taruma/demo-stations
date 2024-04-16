@@ -275,7 +275,7 @@ def generate_nearest_stations_map(
     return go.Figure(data, layout)
 
 
-def generate_completness_heatmap(
+def generate_completeness_heatmap(
     dataframe: pd.DataFrame, station_locations: pd.DataFrame = None
 ) -> go.Figure:
     """

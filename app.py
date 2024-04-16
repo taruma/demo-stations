@@ -214,7 +214,7 @@ def callback_graph_completeness(_, table_nearest_stations, selected_rows_index):
         stat_ids, combined_metadata_comp, FOLDER_COMPLETENESS
     )
 
-    fig_hm = pyfigure.generate_completness_heatmap(dataframe_comp, combined_metadata_comp)
+    fig_hm = pyfigure.generate_completeness_heatmap(dataframe_comp, combined_metadata_comp)
     graph_hm = [pylayoutfunc.graph(fig_hm)]
     graph_bars = []
     bar_names = []
