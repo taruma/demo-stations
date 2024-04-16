@@ -73,7 +73,7 @@ def html_map(combined_metadata_rainfall: pd.DataFrame) -> html.Div:
         [
             html.H2("Rainfall Stations", className="text-center"),
             pylayoutfunc.graph_map(
-                figure=pyfigure.figure_map_all_stations(combined_metadata_rainfall)
+                figure=pyfigure.generate_station_map_figure(combined_metadata_rainfall)
             ),
         ],
         className="mt-5",

@@ -91,12 +91,26 @@ def generate_empty_figure(
     return go.Figure(data, layout)
 
 
-def figure_map_all_stations(combined_metadata: pd.DataFrame) -> go.Figure:
-    """FIGURE OF ALL DATASET (STATIONS)"""
+def generate_station_map_figure(stations_location: pd.DataFrame) -> go.Figure:
+    """
+    Generates a scattermapbox figure showing the locations of stations.
 
+    Args:
+        stations_location (pd.DataFrame): A DataFrame containing the station locations.
+
+    Returns:
+        go.Figure: The scattermapbox figure.
+
+    Note:
+        # The coordinate center of the map is the center of Indonesia.
+        # Reference: https://qr.ae/psPeSb
+        # Coordinate: 2°36'00.1"S 118°00'56.8"E (-2.600029, 118.015776)
+
+    """
+    
     data = []
-    for dataset in combined_metadata["title"].unique():
-        metadata_stations = combined_metadata.loc[combined_metadata["title"] == dataset]
+    for dataset in stations_location["title"].unique():
+        metadata_stations = stations_location.loc[stations_location["title"] == dataset]
         _scattermapbox = go.Scattermapbox(
             lat=metadata_stations.latitude,
             lon=metadata_stations.longitude,
@@ -108,14 +122,12 @@ def figure_map_all_stations(combined_metadata: pd.DataFrame) -> go.Figure:
         )
         data.append(_scattermapbox)
 
-    # ref: https://www.quora.com/Where-exactly-is-the-center-of-Indonesia-latitude-longitude-wise
     layout = go.Layout(
         clickmode="event",
         title=None,
         margin={"t": 0, "l": 0, "b": 0, "r": 0},
         mapbox={
             "center": {
-                # 2°36'00.1"S 118°00'56.8"E (-2.600029, 118.015776)
                 "lat": -2.600029,
                 "lon": 118.015776,
             },
