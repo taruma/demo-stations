@@ -322,7 +322,7 @@ def generate_completeness_heatmap(
         # yaxis_tickangle=-90,
         yaxis_fixedrange=True,
         yaxis={"tickvals": y_label, "ticktext": table_percent.index},
-        margin=dict(t=45, l=0, r=0, b=0),
+        margin={"t": 45, "l": 0, "r": 0, "b": 0},
         dragmode="zoom",
         height=max(450, 45 * len(table_percent)),
         showlegend=True,
