@@ -8,9 +8,9 @@ TEMPLATE:
   SHOW_LEGEND_INSIDE: False
   THEME: BOOTSTRAP
 
-VERSION: v3.1.0
-GITHUB_LINK: https://github.com/fiakoenjiniring/demo-stations
-GITHUB_REPO: fiakoenjiniring/demo-stations
+VERSION: v3.2.0
+GITHUB_LINK: https://github.com/taruma/demo-stations
+GITHUB_REPO: taruma/demo-stations
 
 DATASET:
   METADATA: data/metadata # IGNORED IN run_metadata.py
