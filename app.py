@@ -1,12 +1,12 @@
 """MAIN APPLICATION"""
 
+from pathlib import Path
+from dash import Input, Output, State, html, dcc
 import dash
 import dash_bootstrap_components as dbc
 import plotly.io as pio
-import pyfigure, pyfunc, pylayout, pylayoutfunc  # noqa: E401
-from dash import Input, Output, State, html, dcc
+import pyfigure, pyfunc, pylayout, pylayoutfunc  # pylint: disable=multiple-imports
 from pyconfig import appConfig
-from pathlib import Path
 from pytemplate import mytemplate
 
 pio.templates.default = mytemplate
@@ -19,7 +19,7 @@ DEBUG = appConfig.DASH_APP.DEBUG
 # BOOTSTRAP THEME
 THEME = appConfig.TEMPLATE.THEME
 DBC_CSS = (
-    "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.0.4/dbc.min.css"
+    "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.1.2/dbc.min.css"
 )
 
 # VARS
@@ -183,10 +183,14 @@ def callback_plot_coordinate(
     else:
         return (
             pylayoutfunc.graph_as_staticplot(
-                pyfigure.generate_empty_figure(text="check your input", size=20, margin_all=50)
+                pyfigure.generate_empty_figure(
+                    text="check your input", size=20, margin_all=50
+                )
             ),
             pylayoutfunc.graph_as_staticplot(
-                pyfigure.generate_empty_figure(text="check your input", size=20, margin_all=50)
+                pyfigure.generate_empty_figure(
+                    text="check your input", size=20, margin_all=50
+                )
             ),
             True,
         )
@@ -214,7 +218,9 @@ def callback_graph_completeness(_, table_nearest_stations, selected_rows_index):
         stat_ids, combined_metadata_comp, FOLDER_COMPLETENESS
     )
 
-    fig_hm = pyfigure.generate_completeness_heatmap(dataframe_comp, combined_metadata_comp)
+    fig_hm = pyfigure.generate_completeness_heatmap(
+        dataframe_comp, combined_metadata_comp
+    )
     graph_hm = [pylayoutfunc.graph(fig_hm)]
     graph_bars = []
     bar_names = []
