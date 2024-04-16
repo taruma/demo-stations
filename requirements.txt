@@ -1,20 +1,16 @@
-# PYTHON 3.9.13
+# PYTHON 3.11
 
 # available in conda-forge
-pandas==1.5.1
-dash==2.7.0
-dash-auth==1.4.1
-dash-bootstrap-components==1.2.1
-plotly==5.11.0
-geopy==2.3.0
-python_box==6.1.0
-pyyaml==6.0
-
-# pip exclusive (available in conda with different name)
-tables==3.7.0 # pytables 3.7.0 in conda-forge
-
-# pip only
-dash-bootstrap-templates==1.0.7
+dash-auth>=2.3
+dash-bootstrap-components>=1.6
+dash-bootstrap-templates>=1.1
+dash>=2.16
+geopy>=2.4
+pandas>=2.2
+plotly>=5.19
+python_box>=7.1
+pyyaml>=6.0
+tables>=3.9 # pytables 3.7.0 in conda-forge
 
 # server only
-gunicorn==20.1.0
+gunicorn>=21.2
