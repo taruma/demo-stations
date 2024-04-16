@@ -3,7 +3,7 @@ from typing import List
 import plotly.graph_objects as go
 import pandas as pd
 from dash import dcc, dash_table, html
-from pytemplate import fktemplate
+from pytemplate import mytemplate
 import dash_bootstrap_components as dbc
 
 
@@ -66,7 +66,7 @@ def dataframe_as_datatable(
         row_selectable="multi",
         style_table={"overflowX": "auto", "overflowY": "auto", "height": "450px"},
         style_as_list_view=False,
-        style_cell={"font-family": fktemplate.layout.font.family},
+        style_cell={"font-family": mytemplate.layout.font.family},
         style_data={"textAlign": "left"},
         style_header={"font-size": 20, "textAlign": "center", "font-weight": "bold"},
     )

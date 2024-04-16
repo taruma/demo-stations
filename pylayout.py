@@ -1,12 +1,20 @@
+"""
+This module contains the layout components for a Dash application.
+
+The layout includes HTML elements, Bootstrap components, 
+    and functions to generate graphs and figures.
+"""
+
+from dash import html, dcc
 import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.io as pio
-import pyfigure, pylayoutfunc, pyfunc  # noqa
-from dash import html, dcc
+import pyfigure
+import pylayoutfunc
 from pyconfig import appConfig
-from pytemplate import fktemplate
+from pytemplate import mytemplate
 
-pio.templates.default = fktemplate
+pio.templates.default = mytemplate
 
 HTML_TITLE = html.Div(
     [
@@ -56,7 +64,7 @@ ALERT_DATA = dbc.Alert(
         ),
         ".",
         html.Br(),
-        "Dengan perubahan ini, maka opsi download metadata/rainfall dimatikan."
+        "Dengan perubahan ini, maka opsi download metadata/rainfall dimatikan.",
     ],
     color="warning",
     class_name="text-center fw-bold",
@@ -69,6 +77,7 @@ HTML_INFO = html.Div(
 
 
 def html_map(combined_metadata_rainfall: pd.DataFrame) -> html.Div:
+    """Generate a map of rainfall stations."""
     return html.Div(
         [
             html.H2("Rainfall Stations", className="text-center"),
@@ -254,6 +263,7 @@ def _options_stations(combined_metadata_rr: pd.DataFrame) -> list[dict]:
 
 
 def html_row_rainfall_options(combined_metadata_rr: pd.DataFrame) -> dbc.Container:
+    """Generate a row of rainfall data options."""
     return dbc.Container(
         [
             dbc.Row(

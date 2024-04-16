@@ -7,9 +7,9 @@ import pyfigure, pyfunc, pylayout, pylayoutfunc  # noqa: E401
 from dash import Input, Output, State, html, dcc
 from pyconfig import appConfig
 from pathlib import Path
-from pytemplate import fktemplate
+from pytemplate import mytemplate
 
-pio.templates.default = fktemplate
+pio.templates.default = mytemplate
 
 # DASH APP CONFIG
 APP_TITLE = appConfig.DASH_APP.APP_TITLE
