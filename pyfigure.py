@@ -275,18 +275,29 @@ def generate_nearest_stations_map(
     return go.Figure(data, layout)
 
 
-def figure_comp_heatmap(
-    dataframe: pd.DataFrame, combined_metadata: pd.DataFrame = None
+def generate_completness_heatmap(
+    dataframe: pd.DataFrame, station_locations: pd.DataFrame = None
 ) -> go.Figure:
-    """FIGURE HEATMAP COMPLETENESS ALL STATIONS"""
+    """
+    Generate a heatmap figure showing the completeness of data for all stations.
+
+    Args:
+        dataframe (pd.DataFrame): The input dataframe containing the completeness data.
+        station_locations (pd.DataFrame, optional): 
+            The dataframe containing station locations information. Defaults to None.
+
+    Returns:
+        go.Figure: The generated heatmap figure.
+
+    """
 
     table_percent = dataframe.T.iloc[::-1]
     table_percent_date = table_percent.copy()
     table_percent_date[:] = table_percent_date.columns.strftime("%B %Y")
 
-    if combined_metadata is not None:
+    if station_locations is not None:
         y_label = [
-            f"{stat_id} - {combined_metadata.loc[stat_id, 'station_name']}"
+            f"{stat_id} - {station_locations.loc[stat_id, 'station_name']}"
             for stat_id in table_percent.index
         ]
     else:
