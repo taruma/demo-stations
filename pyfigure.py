@@ -293,6 +293,7 @@ def generate_completeness_heatmap(
 
     table_percent = dataframe.T.iloc[::-1]
     table_percent_date = table_percent.copy()
+    table_percent_date = table_percent_date.astype(str)
     table_percent_date[:] = table_percent_date.columns.strftime("%B %Y")
 
     if station_locations is not None:
