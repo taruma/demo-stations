@@ -179,7 +179,7 @@ HTML_ROW_COORDINATE = dbc.Container(
                         html.H3("Map of Nearest Stations"),
                         dcc.Loading(
                             dcc.Graph(
-                                figure=pyfigure.figure_empty(margin_all=50),
+                                figure=pyfigure.generate_empty_figure(margin_all=50),
                                 config={"staticPlot": True},
                             ),
                             id="graph-coordinate",
@@ -192,7 +192,7 @@ HTML_ROW_COORDINATE = dbc.Container(
                         html.H3("Table of Nearest Stations"),
                         dcc.Loading(
                             dcc.Graph(
-                                figure=pyfigure.figure_empty(margin_all=50),
+                                figure=pyfigure.generate_empty_figure(margin_all=50),
                                 config={"staticPlot": True},
                             ),
                             id="table-coordinate",
@@ -232,7 +232,7 @@ HTML_ROW_COMPLETENESS_RAINFALL = dbc.Container(
                 html.H3("Completeness Rainfall Data"),
                 dcc.Loading(
                     dcc.Graph(
-                        figure=pyfigure.figure_empty(margin_all=50),
+                        figure=pyfigure.generate_empty_figure(margin_all=50),
                         config={"staticPlot": True},
                     ),
                     id="graph-completeness-rainfall",
@@ -330,7 +330,7 @@ HTML_ROW_GRAPH_RAINFALL = dbc.Container(
                 html.H3("Rainfall Data"),
                 dcc.Loading(
                     dcc.Graph(
-                        figure=pyfigure.figure_empty(margin_all=50),
+                        figure=pyfigure.generate_empty_figure(margin_all=50),
                         config={"staticPlot": True},
                     ),
                     id="graph-rainfall-data",

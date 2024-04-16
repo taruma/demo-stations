@@ -183,10 +183,10 @@ def callback_plot_coordinate(
     else:
         return (
             pylayoutfunc.graph_as_staticplot(
-                pyfigure.figure_empty(text="check your input", size=20, margin_all=50)
+                pyfigure.generate_empty_figure(text="check your input", size=20, margin_all=50)
             ),
             pylayoutfunc.graph_as_staticplot(
-                pyfigure.figure_empty(text="check your input", size=20, margin_all=50)
+                pyfigure.generate_empty_figure(text="check your input", size=20, margin_all=50)
             ),
             True,
         )

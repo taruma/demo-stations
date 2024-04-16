@@ -38,10 +38,22 @@ def generate_watermark(subplot_number: int = 1, watermark_source: str = None) ->
     }
 
 
-def figure_empty(
+def generate_empty_figure(
     text: str = "", size: int = 40, margin_all: int = 0, height: int = 450
 ) -> go.Figure:
-    """GENERATE FIGURE EMPTY"""
+    """
+    Generate an empty figure with customizable text annotation.
+
+    Parameters:
+    - text (str): The text to be displayed as an annotation in the figure.
+        Default is an empty string.
+    - size (int): The font size of the text annotation. Default is 40.
+    - margin_all (int): The margin size for all sides of the figure. Default is 0.
+    - height (int): The height of the figure in pixels. Default is 450.
+
+    Returns:
+    - go.Figure: The generated empty figure with the specified properties.
+    """
 
     data = [{"x": [], "y": []}]
 
