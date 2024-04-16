@@ -1,28 +1,41 @@
-"""MODULE FOR GENERATE FIGURE RELATED"""
+"""MODULE FOR GENERATE FIGURE PLOTLY"""
+
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 from pyconfig import appConfig
 
 
-def generate_watermark(n: int = 1, source: str = None) -> dict:
-    """GENERATE DICT WATERMARK FOR SUBPLOTS"""
+def generate_watermark(subplot_number: int = 1, watermark_source: str = None) -> dict:
+    """
+    Generate a watermark dictionary for a subplot.
 
-    n = "" if n == 1 else n
-    return dict(
-        source=appConfig.TEMPLATE.WATERMARK_SOURCE,
-        xref=f"x{n} domain",
-        yref=f"y{n} domain",
-        x=0.5,
-        y=0.5,
-        sizex=0.5,
-        sizey=0.5,
-        xanchor="center",
-        yanchor="middle",
-        name="watermark",
-        layer="below",
-        opacity=0.2,
-    )
+    Args:
+        subplot_number (int, optional): The number of the subplot. Defaults to 1.
+        watermark_source (str, optional): The source of the watermark.
+            If not provided, it uses the default watermark source from the app configuration.
+
+    Returns:
+        dict: A dictionary containing the watermark properties.
+
+    """
+    watermark_source = watermark_source or appConfig.TEMPLATE.WATERMARK_SOURCE
+
+    subplot_number = "" if subplot_number == 1 else subplot_number
+    return {
+        "source": watermark_source,
+        "xref": f"x{subplot_number} domain",
+        "yref": f"y{subplot_number} domain",
+        "x": 0.5,
+        "y": 0.5,
+        "sizex": 0.5,
+        "sizey": 0.5,
+        "xanchor": "center",
+        "yanchor": "middle",
+        "name": "watermark",
+        "layer": "below",
+        "opacity": 0.2,
+    }
 
 
 def figure_empty(
@@ -46,19 +59,19 @@ def figure_empty(
             "showticklabels": False,
             "zeroline": False,
         },
-        margin=dict(t=margin_all, l=margin_all, r=margin_all, b=margin_all),
+        margin={"t": margin_all, "l": margin_all, "r": margin_all, "b": margin_all},
         annotations=[
-            dict(
-                name="text",
-                text=f"<i>{text}</i>",
-                opacity=0.3,
-                font_size=size,
-                xref="x domain",
-                yref="y domain",
-                x=0.5,
-                y=0.05,
-                showarrow=False,
-            )
+            {
+                "name": "text",
+                "text": f"<i>{text}</i>",
+                "opacity": 0.3,
+                "font_size": size,
+                "xref": "x domain",
+                "yref": "y domain",
+                "x": 0.5,
+                "y": 0.05,
+                "showarrow": False,
+            }
         ],
         height=height,
     )
@@ -83,24 +96,28 @@ def figure_map_all_stations(combined_metadata: pd.DataFrame) -> go.Figure:
         )
         data.append(_scattermapbox)
 
+    # ref: https://www.quora.com/Where-exactly-is-the-center-of-Indonesia-latitude-longitude-wise
     layout = go.Layout(
         clickmode="event",
         title=None,
-        margin=dict(t=0, l=0, b=0, r=0),
-        mapbox=dict(
-            center=dict(
-                # ref: https://www.quora.com/Where-exactly-is-the-center-of-Indonesia-latitude-longitude-wise
+        margin={"t": 0, "l": 0, "b": 0, "r": 0},
+        mapbox={
+            "center": {
                 # 2°36'00.1"S 118°00'56.8"E (-2.600029, 118.015776)
-                lat=-2.600029,
-                lon=118.015776,
-            ),
-        ),
+                "lat": -2.600029,
+                "lon": 118.015776,
+            },
+        },
         dragmode=False,
         showlegend=True,
         legend_title="<b>Dataset</b>",
-        legend=dict(
-            yanchor="top", xanchor="left", x=0.01, y=0.99, bgcolor="rgba(0,0,0,0)"
-        ),
+        legend={
+            "yanchor": "top",
+            "xanchor": "left",
+            "x": 0.01,
+            "y": 0.99,
+            "bgcolor": "rgba(0,0,0,0)",
+        },
         images=[
             dict(
                 source=appConfig.TEMPLATE.WATERMARK_SOURCE,
