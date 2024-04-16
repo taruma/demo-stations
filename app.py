@@ -271,7 +271,7 @@ def callback_plot_rainfall(_, years, stations, switch_clean_data):
     if "clean-data" in switch_clean_data:
         pyfunc.replace_unmeasured_data(dataframe_sliced)
 
-    fig = pyfigure.figure_scatter(dataframe_sliced, combined_metadata_rr)
+    fig = pyfigure.generate_rainfall_scatter(dataframe_sliced, combined_metadata_rr)
 
     return pylayoutfunc.graph(fig)
 

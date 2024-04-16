@@ -395,26 +395,35 @@ def generate_completeness_bar(
     return go.Figure(data, layout)
 
 
-def figure_scatter(
-    dataframe: pd.DataFrame, combined_metadata_rr: pd.DataFrame
+def generate_rainfall_scatter(
+    rainfall_data: pd.DataFrame, rainfall_metadata: pd.DataFrame
 ) -> go.Figure:
-    """FIGURE LINE/SCATTER STATIONS"""
+    """
+    Generate a scatter plot of rainfall data for multiple stations.
 
+    Args:
+        rainfall_data (pd.DataFrame): A DataFrame containing rainfall data for multiple stations.
+        rainfall_metadata (pd.DataFrame): A DataFrame containing metadata for the rainfall stations.
+
+    Returns:
+        go.Figure: A scatter plot figure object.
+
+    """
     data = [
         go.Scatter(
             x=series.index,
             y=series,
             mode="lines",
-            name=f"{stat_id} - {combined_metadata_rr.loc[stat_id, 'station_name']}",
+            name=f"{stat_id} - {rainfall_metadata.loc[stat_id, 'station_name']}",
         )
-        for stat_id, series in dataframe.items()
+        for stat_id, series in rainfall_data.items()
     ]
     layout = go.Layout(
         hovermode="closest",
         xaxis_title="<b>Date</b>",
         yaxis_title="<b>Rainfall (mm)</b>",
         legend_title="<b>Stations</b>",
-        margin=dict(t=25, l=0, r=0, b=0),
+        margin={"t": 25, "l": 0, "r": 0, "b": 0},
     )
 
     return go.Figure(data, layout)
