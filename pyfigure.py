@@ -94,12 +94,12 @@ def generate_empty_figure(
     return go.Figure(data, layout)
 
 
-def generate_station_map_figure(stations_location: pd.DataFrame) -> go.Figure:
+def generate_station_map_figure(station_locations: pd.DataFrame) -> go.Figure:
     """
     Generates a scattermapbox figure showing the locations of stations.
 
     Args:
-        stations_location (pd.DataFrame): A DataFrame containing the station locations.
+        station_locations (pd.DataFrame): A DataFrame containing the station locations.
 
     Returns:
         go.Figure: The scattermapbox figure.
@@ -112,8 +112,8 @@ def generate_station_map_figure(stations_location: pd.DataFrame) -> go.Figure:
     """
 
     data = []
-    for dataset in stations_location["title"].unique():
-        metadata_stations = stations_location.loc[stations_location["title"] == dataset]
+    for dataset in station_locations["title"].unique():
+        metadata_stations = station_locations.loc[station_locations["title"] == dataset]
         _scattermapbox = go.Scattermapbox(
             lat=metadata_stations.latitude,
             lon=metadata_stations.longitude,
@@ -331,13 +331,13 @@ def generate_completeness_heatmap(
 
 
 def figure_comp_bar_single(
-    series: pd.Series, combined_metadata: pd.DataFrame
+    series: pd.Series, station_locations: pd.DataFrame
 ) -> go.Figure:
     """FIGURE BAR COMPLETENESS SINGLE STATION"""
 
     border = 100 - series
 
-    station_name = combined_metadata.loc[series.name, "station_name"]
+    station_name = station_locations.loc[series.name, "station_name"]
 
     data = []
     _bar = go.Bar(
