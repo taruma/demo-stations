@@ -3,7 +3,10 @@
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
+from geopy.point import Point
 from pyconfig import appConfig
+
+LOWEST_OPACITY, HIGHEST_OPACITY = 0.4, 1
 
 
 def generate_watermark(subplot_number: int = 1, watermark_source: str = None) -> dict:
@@ -107,7 +110,7 @@ def generate_station_map_figure(stations_location: pd.DataFrame) -> go.Figure:
         # Coordinate: 2°36'00.1"S 118°00'56.8"E (-2.600029, 118.015776)
 
     """
-    
+
     data = []
     for dataset in stations_location["title"].unique():
         metadata_stations = stations_location.loc[stations_location["title"] == dataset]
@@ -170,8 +173,6 @@ def figure_map_coordinate(
 ) -> go.Figure:
     """FIGURE MAP OF COORDINATE AND NEAREST STATIONS"""
 
-    from geopy.point import Point
-
     point_coordinate = Point(point_coordinate)
 
     # ref: https://stats.stackexchange.com/questions/281162/scale-a-number-between-a-range
@@ -180,7 +181,6 @@ def figure_map_coordinate(
             (data - data.min()) / (data.max() - data.min())
         )
 
-    LOWEST_OPACITY, HIGHEST_OPACITY = 0.4, 1
     opacity_stations = (
         normalize(df_with_distance.distance, LOWEST_OPACITY, HIGHEST_OPACITY)[::-1]
         if len(df_with_distance) > 1
@@ -201,7 +201,8 @@ def figure_map_coordinate(
                 ],
                 axis=-1,
             ),
-            hovertemplate="%{customdata[0]} - %{text}<br>(%{lat:.5f}, %{lon:.5f})<br><b>%{customdata[1]:.3f} km</b><extra></extra>",
+            hovertemplate="%{customdata[0]} - %{text}<br>(%{lat:.5f}, %{lon:.5f})<br>"
+            "<b>%{customdata[1]:.3f} km</b><extra></extra>",
             name="Nearest Stations",
             marker_size=12,  # df_with_distance.distance,
             # marker_sizemin=5,
@@ -227,39 +228,37 @@ def figure_map_coordinate(
     layout = go.Layout(
         clickmode="event",
         title=None,
-        margin=dict(t=0, l=0, b=0, r=0),
+        margin={"t": 0, "l": 0, "b": 0, "r": 0},
         mapbox_center_lat=point_coordinate.latitude,
         mapbox_center_lon=point_coordinate.longitude,
         dragmode=False,
         showlegend=True,
-        mapbox=dict(
-            zoom=9.5,
-        ),
+        mapbox={"zoom": 9.5},
         images=[
-            dict(
-                source=appConfig.TEMPLATE.WATERMARK_SOURCE,
-                xref="x domain",
-                yref="y domain",
-                x=0.5,
-                y=0.02,
-                sizex=0.3,
-                sizey=0.3,
-                xanchor="center",
-                yanchor="bottom",
-                name="watermark-fiako",
-                layer="above",
-                opacity=0.6,
-            )
+            {
+                "source": appConfig.TEMPLATE.WATERMARK_SOURCE,
+                "xref": "x domain",
+                "yref": "y domain",
+                "x": 0.5,
+                "y": 0.02,
+                "sizex": 0.3,
+                "sizey": 0.3,
+                "xanchor": "center",
+                "yanchor": "bottom",
+                "name": "watermark-fiako",
+                "layer": "above",
+                "opacity": 0.6,
+            }
         ],
-        legend=dict(
-            orientation="h",
-            yanchor="bottom",
-            y=1.02,
-            xanchor="left",
-            x=0.01,
-            bgcolor="rgba(0,0,0,0)",
-            itemsizing="constant",
-        ),
+        legend={
+            "orientation": "h",
+            "yanchor": "bottom",
+            "y": 1.02,
+            "xanchor": "left",
+            "x": 0.01,
+            "bgcolor": "rgba(0,0,0,0)",
+            "itemsizing": "constant",
+        },
     )
 
     return go.Figure(data, layout)
