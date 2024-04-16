@@ -1,4 +1,6 @@
-"""MODULE FOR GENERATE FIGURE PLOTLY"""
+"""
+This module contains functions for generating various types of figures using Plotly library.
+"""
 
 import numpy as np
 import pandas as pd
