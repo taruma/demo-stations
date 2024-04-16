@@ -97,6 +97,7 @@ Berikut daftar dokumentasi yang tersedia terkait proyek ini:
 [MIT LICENSE](./LICENSE)
 
 ```
+Copyright ©️ 2022-2024 Taruma Sakti Megariansyah
 Copyright ©️ 2022 PT. FIAKO ENJINIRING INDONESIA
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
