@@ -119,20 +119,20 @@ def figure_map_all_stations(combined_metadata: pd.DataFrame) -> go.Figure:
             "bgcolor": "rgba(0,0,0,0)",
         },
         images=[
-            dict(
-                source=appConfig.TEMPLATE.WATERMARK_SOURCE,
-                xref="x domain",
-                yref="y domain",
-                x=0.01,
-                y=0.02,
-                sizex=0.2,
-                sizey=0.2,
-                xanchor="left",
-                yanchor="bottom",
-                name="watermark-fiako",
-                layer="above",
-                opacity=0.7,
-            )
+            {
+                "source": appConfig.TEMPLATE.WATERMARK_SOURCE,
+                "xref": "x domain",
+                "yref": "y domain",
+                "x": 0.01,
+                "y": 0.02,
+                "sizex": 0.2,
+                "sizey": 0.2,
+                "xanchor": "left",
+                "yanchor": "bottom",
+                "name": "watermark-fiako",
+                "layer": "above",
+                "opacity": 0.7,
+            }
         ],
     )
 
