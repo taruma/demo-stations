@@ -1,13 +1,16 @@
 """FUNCTION FOR GENERATE LAYOUT"""
+
+from textwrap import wrap
 from typing import List
-import plotly.graph_objects as go
-import pandas as pd
 from dash import dcc, dash_table, html
-from pytemplate import mytemplate
 import dash_bootstrap_components as dbc
+import pandas as pd
+import plotly.graph_objects as go
+from pytemplate import mytemplate
 
 
 def graph_as_staticplot(figure: go.Figure, config: dict = None) -> dcc.Graph:
+    """Return a dcc.Graph object with a static plot configuration."""
     config = {"staticPlot": True} if config is None else config
     return dcc.Graph(figure=figure, config=config)
 
@@ -15,6 +18,7 @@ def graph_as_staticplot(figure: go.Figure, config: dict = None) -> dcc.Graph:
 def graph_map(
     figure: go.Figure, config: dict = None, border_width: int = 3
 ) -> dcc.Graph:
+    """Return a dcc.Graph object with a map configuration."""
     config = {"scrollZoom": True} if config is None else config
     return dcc.Graph(
         figure=figure,
@@ -24,6 +28,7 @@ def graph_map(
 
 
 def graph(figure: go.Figure) -> dcc.Graph:
+    """Return a dcc.Graph object with a default configuration."""
     return dcc.Graph(figure=figure)
 
 
@@ -37,6 +42,29 @@ def dataframe_as_datatable(
     page_size: int = 10,
     index_is_date: bool = False,
 ):
+    """
+    Convert a pandas DataFrame into a Dash DataTable.
+
+    Args:
+        dataframe (pd.DataFrame): The pandas DataFrame to convert.
+        idtable (str): The ID of the DataTable component.
+        cols_name (list, optional): A list of column names to display in the DataTable.
+            If None, all columns will be displayed. Defaults to None.
+        editable (bool, optional): Whether the DataTable cells are editable.
+            Defaults to False.
+        deletable (bool, optional): Whether the DataTable columns are deletable.
+            Defaults to False.
+        renamable (bool, optional): Whether the DataTable columns are renamable.
+            Defaults to False.
+        page_size (int, optional): The number of rows to display per page.
+            Defaults to 10.
+        index_is_date (bool, optional): Whether the DataFrame index represents dates.
+            If True, the index will be renamed to "date" and converted to date format.
+            Defaults to False.
+
+    Returns:
+        dash_table.DataTable: The converted Dash DataTable component.
+    """
 
     if index_is_date:
         dataframe = dataframe.rename_axis("date")
@@ -75,20 +103,32 @@ def dataframe_as_datatable(
 def create_tabcard_graph_comp(
     graphs: List[dcc.Graph], tab_names: List, tab_ids: List, active_tab: str = None
 ):
-    def wrap_names(text, width=30):
-        from textwrap import wrap
+    """
+    Create a tabbed card graph component.
 
+    Args:
+        graphs (List[dcc.Graph]):
+            A list of dcc.Graph objects representing the graphs to be displayed in each tab.
+        tab_names (List): A list of tab names.
+        tab_ids (List): A list of tab IDs.
+        active_tab (str, optional): The ID of the active tab. Defaults to None.
+
+    Returns:
+        dbc.Tabs: A Dash Bootstrap Components Tabs component with the specified graphs and tabs.
+
+    """
+
+    def wrap_names(text, width=30):
         if len(wrap(text, width=width)) > 1:
             return wrap(text, width=width)[0] + "..."
-        else:
-            return text
+        return text
 
     tab_names_wrapped = [wrap_names(name) for name in tab_names]
 
     tabs = []
-    for graph, label, tab_id in zip(graphs, tab_names_wrapped, tab_ids):
+    for each_graph, label, tab_id in zip(graphs, tab_names_wrapped, tab_ids):
         _tab = dbc.Tab(
-            dbc.Card(dbc.CardBody([graph]), class_name="my-2"),
+            dbc.Card(dbc.CardBody([each_graph]), class_name="my-2"),
             label=label,
             tab_id=tab_id,
         )
@@ -100,7 +140,20 @@ def create_tabcard_graph_comp(
 
 
 def create_rangeslider(stat_ids: List, combined_metadata_rainfall: pd.DataFrame):
+    """
+    Create a RangeSlider component based on the given station IDs and
+        combined metadata rainfall DataFrame.
 
+    Args:
+        stat_ids (List): A list of station IDs.
+        combined_metadata_rainfall (pd.DataFrame):
+            A DataFrame containing combined metadata rainfall information.
+
+    Returns:
+        dcc.RangeSlider or html.P: A RangeSlider component if `stat_ids` is not empty,
+            otherwise a paragraph element with a message.
+
+    """
     if stat_ids:
         date_start = combined_metadata_rainfall.loc[stat_ids, "date_start"]
         date_end = combined_metadata_rainfall.loc[stat_ids, "date_end"]
@@ -117,8 +170,8 @@ def create_rangeslider(stat_ids: List, combined_metadata_rainfall: pd.DataFrame)
             marks={year_start: f"{year_start}", year_end: f"{year_end}"},
             value=[val_start, val_end],
         )
-    else:
-        return html.P(
-            "Pick Stations First",
-            className="text-muted text-center",
-        )
+
+    return html.P(
+        "Pick Stations First",
+        className="text-muted text-center",
+    )
