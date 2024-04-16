@@ -1,11 +1,25 @@
-from pyconfig import appConfig
+"""Generate metadata for all datasets in the folder"""
+
 from pathlib import Path
 import pandas as pd
 import pyfunc
+from pyconfig import appConfig
+
+# pylint: disable=invalid-name
 
 
 def generate_metadata(folder: Path, folder_metadata: Path) -> None:
+    """
+    Generate metadata for files in a given folder and save it to a CSV file.
 
+    Args:
+        folder (Path): The folder containing the files
+            for which metadata needs to be generated.
+        folder_metadata (Path): The folder where the metadata CSV file will be saved.
+
+    Returns:
+        None
+    """
     folder_name = folder.parts[-1]
 
     if folder_name.startswith("_"):
@@ -48,7 +62,7 @@ def generate_metadata(folder: Path, folder_metadata: Path) -> None:
 
 
 def main():
-
+    """Main function to generate metadata for all datasets in the folder"""
     DATASET_CONFIGS = appConfig.DATASET
     FOLDER_METADATA = Path(appConfig.DATASET.METADATA)
 
