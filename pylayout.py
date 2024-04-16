@@ -363,7 +363,7 @@ HTML_ROW_BUTTON_DOWNLOAD = dbc.Container(
                     size="lg",
                     color="info",
                     class_name="mx-3",
-                    disabled=True,
+                    disabled=False,
                 ),
                 dcc.Download(id="download-metadata-stations"),
                 dbc.Button(

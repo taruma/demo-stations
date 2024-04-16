@@ -1,6 +1,9 @@
 """MAIN APPLICATION"""
 
+# pylint: disable=too-many-arguments, too-many-locals, too-many-branches, too-many-statements
+
 from pathlib import Path
+import math
 from dash import Input, Output, State, html, dcc
 import dash
 import dash_bootstrap_components as dbc
@@ -19,7 +22,7 @@ DEBUG = appConfig.DASH_APP.DEBUG
 # BOOTSTRAP THEME
 THEME = appConfig.TEMPLATE.THEME
 DBC_CSS = (
-    "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.1.2/dbc.min.css"
+    "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.1.4/dbc.min.css"
 )
 
 # VARS
@@ -142,7 +145,6 @@ def callback_plot_coordinate(
     n_nearest: int,
 ):
     """CALLBACK PLOT BASED ON COORDINATE"""
-    import math
 
     if input_lat_valid and input_lon_valid and input_name_valid:
         point_coordinate = f"{latitude},{longitude}"
@@ -165,13 +167,13 @@ def callback_plot_coordinate(
             point_coordinate, name_coordinate, df_nearest_stations
         )
 
-        COLS_TABLE = "title distance station_name".split()
-        COLS_NAME = "ID,DATASET,DISTANCE,STATION NAME".split(",")
+        cols_table = "title distance station_name".split()
+        cols_name = "ID,DATASET,DISTANCE,STATION NAME".split(",")
 
         table = pylayoutfunc.dataframe_as_datatable(
-            df_nearest_stations[COLS_TABLE],
+            df_nearest_stations[cols_table],
             "table-nearest-stations",
-            cols_name=COLS_NAME,
+            cols_name=cols_name,
             page_size=12,
         )
 
@@ -180,20 +182,20 @@ def callback_plot_coordinate(
             html.Div(table, className="border border-3 border-secondary"),
             False,
         )
-    else:
-        return (
-            pylayoutfunc.graph_as_staticplot(
-                pyfigure.generate_empty_figure(
-                    text="check your input", size=20, margin_all=50
-                )
-            ),
-            pylayoutfunc.graph_as_staticplot(
-                pyfigure.generate_empty_figure(
-                    text="check your input", size=20, margin_all=50
-                )
-            ),
-            True,
-        )
+
+    return (
+        pylayoutfunc.graph_as_staticplot(
+            pyfigure.generate_empty_figure(
+                text="check your input", size=20, margin_all=50
+            )
+        ),
+        pylayoutfunc.graph_as_staticplot(
+            pyfigure.generate_empty_figure(
+                text="check your input", size=20, margin_all=50
+            )
+        ),
+        True,
+    )
 
 
 @app.callback(
@@ -252,8 +254,8 @@ def callback_update_years(stations):
     """CALLBACK GENERATE SLIDER BASED ON RANGE OF DATASET"""
     return (
         pylayoutfunc.create_rangeslider(stations, combined_metadata_rr),
-        False if stations else True,
-        True,
+        not stations,
+        not stations,
     )
 
 
