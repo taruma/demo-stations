@@ -283,7 +283,7 @@ def generate_completeness_heatmap(
 
     Args:
         dataframe (pd.DataFrame): The input dataframe containing the completeness data.
-        station_locations (pd.DataFrame, optional): 
+        station_locations (pd.DataFrame, optional):
             The dataframe containing station locations information. Defaults to None.
 
     Returns:
@@ -330,10 +330,19 @@ def generate_completeness_heatmap(
     return go.Figure(data, layout)
 
 
-def figure_comp_bar_single(
+def generate_completeness_bar(
     series: pd.Series, station_locations: pd.DataFrame
 ) -> go.Figure:
-    """FIGURE BAR COMPLETENESS SINGLE STATION"""
+    """
+    Generate a bar chart showing the completeness of data for a single station.
+
+    Args:
+        series (pd.Series): The series containing the completeness data.
+        station_locations (pd.DataFrame): The dataframe containing station locations.
+
+    Returns:
+        go.Figure: The generated bar chart figure.
+    """
 
     border = 100 - series
 
@@ -366,20 +375,20 @@ def figure_comp_bar_single(
         bargap=0,
         dragmode="zoom",
         showlegend=True,
-        legend=dict(
-            orientation="h",
-            yanchor="bottom",
-            y=1.02,
-            xanchor="left",
-            x=0.01,
-        ),
+        legend={
+            "orientation": "h",
+            "yanchor": "bottom",
+            "y": 1.02,
+            "xanchor": "left",
+            "x": 0.01,
+        },
         xaxis_title="<b>Date</b>",
         yaxis={
             "fixedrange": True,
             "title": "<b>Percentage (%)</b>",
             "range": [0, 100],
         },
-        margin=dict(t=45, l=0, r=0, b=0),
+        margin={"t": 45, "l": 0, "r": 0, "b": 0},
     )
 
     return go.Figure(data, layout)

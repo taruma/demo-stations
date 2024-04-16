@@ -222,7 +222,7 @@ def callback_graph_completeness(_, table_nearest_stations, selected_rows_index):
 
     for stat_id in stat_ids:
         _series = dataframe_comp[stat_id].dropna()
-        _bar = pyfigure.figure_comp_bar_single(_series, combined_metadata_comp)
+        _bar = pyfigure.generate_completeness_bar(_series, combined_metadata_comp)
         _name = combined_metadata_comp.loc[stat_id, "station_name"]
         graph_bars.append(pylayoutfunc.graph(_bar))
         bar_names.append(f"{stat_id} - {_name}")
