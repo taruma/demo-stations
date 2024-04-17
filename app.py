@@ -1,15 +1,18 @@
 """MAIN APPLICATION"""
 
+# pylint: disable=too-many-arguments, too-many-locals, too-many-branches, too-many-statements
+
+from pathlib import Path
+import math
+from dash import Input, Output, State, html, dcc
 import dash
 import dash_bootstrap_components as dbc
 import plotly.io as pio
-import pyfigure, pyfunc, pylayout, pylayoutfunc  # noqa: E401
-from dash import Input, Output, State, html, dcc
+import pyfigure, pyfunc, pylayout, pylayoutfunc  # pylint: disable=multiple-imports
 from pyconfig import appConfig
-from pathlib import Path
-from pytemplate import fktemplate
+from pytemplate import mytemplate
 
-pio.templates.default = fktemplate
+pio.templates.default = mytemplate
 
 # DASH APP CONFIG
 APP_TITLE = appConfig.DASH_APP.APP_TITLE
@@ -19,7 +22,7 @@ DEBUG = appConfig.DASH_APP.DEBUG
 # BOOTSTRAP THEME
 THEME = appConfig.TEMPLATE.THEME
 DBC_CSS = (
-    "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.0.4/dbc.min.css"
+    "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.1.2/dbc.min.css"
 )
 
 # VARS
@@ -55,7 +58,8 @@ app.layout = dbc.Container(
         pylayout.html_row_rainfall_options(combined_metadata_rr),
         pylayout.HTML_ROW_GRAPH_RAINFALL,
         pylayout.HTML_ROW_BUTTON_DOWNLOAD,
-        pylayout.HTML_CREATOR,
+        html.Hr(),
+        # pylayout.HTML_CREATOR,
         pylayout.HTML_FOOTER,
     ],
     fluid=False,
@@ -82,7 +86,7 @@ app.layout = dbc.Container(
     State("input-longitude", "invalid"),
     State("input-name-coordinate", "valid"),
     State("input-name-coordinate", "invalid"),
-    prevent_initial_call=True,
+    # prevent_initial_call=True,
 )
 def callback_valid_coordinate(
     _,
@@ -129,7 +133,7 @@ def callback_valid_coordinate(
     State("input-name-coordinate", "value"),
     State("input-radius", "value"),
     State("input-n-stations", "value"),
-    prevent_initial_call=True,
+    # prevent_initial_call=True,
 )
 def callback_plot_coordinate(
     input_lat_valid: bool,
@@ -142,7 +146,6 @@ def callback_plot_coordinate(
     n_nearest: int,
 ):
     """CALLBACK PLOT BASED ON COORDINATE"""
-    import math
 
     if input_lat_valid and input_lon_valid and input_name_valid:
         point_coordinate = f"{latitude},{longitude}"
@@ -161,17 +164,17 @@ def callback_plot_coordinate(
             .iloc[:n_nearest]
         )
 
-        fig = pyfigure.figure_map_coordinate(
+        fig = pyfigure.generate_nearest_stations_map(
             point_coordinate, name_coordinate, df_nearest_stations
         )
 
-        COLS_TABLE = "title distance station_name".split()
-        COLS_NAME = "ID,DATASET,DISTANCE,STATION NAME".split(",")
+        cols_table = "title distance station_name".split()
+        cols_name = "ID,DATASET,DISTANCE,STATION NAME".split(",")
 
         table = pylayoutfunc.dataframe_as_datatable(
-            df_nearest_stations[COLS_TABLE],
+            df_nearest_stations[cols_table],
             "table-nearest-stations",
-            cols_name=COLS_NAME,
+            cols_name=cols_name,
             page_size=12,
         )
 
@@ -180,16 +183,20 @@ def callback_plot_coordinate(
             html.Div(table, className="border border-3 border-secondary"),
             False,
         )
-    else:
-        return (
-            pylayoutfunc.graph_as_staticplot(
-                pyfigure.figure_empty(text="check your input", size=20, margin_all=50)
-            ),
-            pylayoutfunc.graph_as_staticplot(
-                pyfigure.figure_empty(text="check your input", size=20, margin_all=50)
-            ),
-            True,
-        )
+
+    return (
+        pylayoutfunc.graph_as_staticplot(
+            pyfigure.generate_empty_figure(
+                text="check your input", size=20, margin_all=50
+            )
+        ),
+        pylayoutfunc.graph_as_staticplot(
+            pyfigure.generate_empty_figure(
+                text="check your input", size=20, margin_all=50
+            )
+        ),
+        True,
+    )
 
 
 @app.callback(
@@ -214,7 +221,9 @@ def callback_graph_completeness(_, table_nearest_stations, selected_rows_index):
         stat_ids, combined_metadata_comp, FOLDER_COMPLETENESS
     )
 
-    fig_hm = pyfigure.figure_comp_heatmap(dataframe_comp, combined_metadata_comp)
+    fig_hm = pyfigure.generate_completeness_heatmap(
+        dataframe_comp, combined_metadata_comp
+    )
     graph_hm = [pylayoutfunc.graph(fig_hm)]
     graph_bars = []
     bar_names = []
@@ -222,7 +231,7 @@ def callback_graph_completeness(_, table_nearest_stations, selected_rows_index):
 
     for stat_id in stat_ids:
         _series = dataframe_comp[stat_id].dropna()
-        _bar = pyfigure.figure_comp_bar_single(_series, combined_metadata_comp)
+        _bar = pyfigure.generate_completeness_bar(_series, combined_metadata_comp)
         _name = combined_metadata_comp.loc[stat_id, "station_name"]
         graph_bars.append(pylayoutfunc.graph(_bar))
         bar_names.append(f"{stat_id} - {_name}")
@@ -246,8 +255,8 @@ def callback_update_years(stations):
     """CALLBACK GENERATE SLIDER BASED ON RANGE OF DATASET"""
     return (
         pylayoutfunc.create_rangeslider(stations, combined_metadata_rr),
-        False if stations else True,
-        True,
+        not stations,
+        not stations,
     )
 
 
@@ -271,7 +280,7 @@ def callback_plot_rainfall(_, years, stations, switch_clean_data):
     if "clean-data" in switch_clean_data:
         pyfunc.replace_unmeasured_data(dataframe_sliced)
 
-    fig = pyfigure.figure_scatter(dataframe_sliced, combined_metadata_rr)
+    fig = pyfigure.generate_rainfall_scatter(dataframe_sliced, combined_metadata_rr)
 
     return pylayoutfunc.graph(fig)
 

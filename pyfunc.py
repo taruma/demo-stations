@@ -1,8 +1,12 @@
 """MODULE FUNCTION ONLY"""
+
 from pathlib import Path
 from typing import List
+from geopy.point import Point
+from geopy import distance
 import numpy as np
 import pandas as pd
+from pyconfig import appConfig
 
 
 def get_metadata_stations(path_file: Path) -> pd.DataFrame:
@@ -19,14 +23,9 @@ def get_metadata_file(path_file: Path) -> pd.Series:
 
 def read_metadata_csv(path_file: Path) -> pd.DataFrame:
     """READ METADATA RAINFALL & COMPLETENESS FILE/FOLDER"""
-    from pyconfig import appConfig
 
     path_file = Path(path_file)
 
-    if path_file.is_file():
-        return pd.read_csv(
-            path_file, index_col=0, parse_dates=["date_start", "date_end"]
-        )
     if path_file.is_dir():
         filename = f"metadata_{path_file.parts[-1]}.csv"
         folder_metadata = Path(appConfig.DATASET.METADATA)
@@ -34,6 +33,8 @@ def read_metadata_csv(path_file: Path) -> pd.DataFrame:
         return pd.read_csv(
             path_file, index_col=0, parse_dates=["date_start", "date_end"]
         )
+    # if path_file.is_file():
+    return pd.read_csv(path_file, index_col=0, parse_dates=["date_start", "date_end"])
 
 
 # FUNCTIONS
@@ -51,7 +52,6 @@ def replace_unmeasured_data(
 
 def validate_single_coordinate(single_coordinate: str, angle: str = "lat"):
     """Validate single coordinate on angle [lat]itude/[lon]itude"""
-    from geopy.point import Point
 
     try:
         if angle == "lat":
@@ -62,7 +62,7 @@ def validate_single_coordinate(single_coordinate: str, angle: str = "lat"):
             return False
         Point(checkcoord)
         return True
-    except Exception as e:
+    except ValueError as e:
         print(e)
         return False
 
@@ -71,8 +71,6 @@ def dataframe_calc_distance(
     point_coordinate: str, metadata_stations: pd.DataFrame = None
 ) -> pd.DataFrame:
     """ADD ADITIONAL COLUMN DISTANCE FROM POINT COORDINATE"""
-    from geopy.point import Point
-    from geopy import distance
 
     point_coord = Point(point_coordinate)
 
@@ -87,6 +85,7 @@ def dataframe_calc_distance(
 
 
 def transform_to_dataframe(dashtable):
+    """Transform dictionary to DataFrame"""
     return pd.DataFrame(dashtable)
 
 
