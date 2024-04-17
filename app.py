@@ -22,7 +22,7 @@ DEBUG = appConfig.DASH_APP.DEBUG
 # BOOTSTRAP THEME
 THEME = appConfig.TEMPLATE.THEME
 DBC_CSS = (
-    "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.1.4/dbc.min.css"
+    "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.1.2/dbc.min.css"
 )
 
 # VARS
