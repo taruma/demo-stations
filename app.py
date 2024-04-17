@@ -85,7 +85,7 @@ app.layout = dbc.Container(
     State("input-longitude", "invalid"),
     State("input-name-coordinate", "valid"),
     State("input-name-coordinate", "invalid"),
-    prevent_initial_call=True,
+    # prevent_initial_call=True,
 )
 def callback_valid_coordinate(
     _,
@@ -132,7 +132,7 @@ def callback_valid_coordinate(
     State("input-name-coordinate", "value"),
     State("input-radius", "value"),
     State("input-n-stations", "value"),
-    prevent_initial_call=True,
+    # prevent_initial_call=True,
 )
 def callback_plot_coordinate(
     input_lat_valid: bool,
