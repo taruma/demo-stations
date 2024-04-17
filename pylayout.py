@@ -21,10 +21,14 @@ HTML_TITLE = html.Div(
         html.H1(
             appConfig.DASH_APP.APP_TITLE, className="float fw-bold mt-3 fs-1 fw-bold"
         ),
-        html.Span("DEMO/OPEN-SOURCE VERSION", className="fw-bold"),
+        html.Span("KAGGLE DATASET VERSION", className="fw-bold"),
         html.Br(),
         html.Span(
-            [appConfig.GITHUB_REPO, "@", appConfig.VERSION],
+            html.A(
+                [appConfig.GITHUB_REPO, "@", appConfig.VERSION],
+                href="https://github.com/taruma/demo-stations",
+                target="_blank",
+            ),
             className="text-muted",
         ),
         html.Br(),
@@ -32,46 +36,47 @@ HTML_TITLE = html.Div(
     className="text-center",
 )
 
-ALERT_INFO = dbc.Alert(
-    [
-        "Informasi aplikasi ini dapat dilihat di ",
-        html.A(
-            "GitHub README",
-            href="https://github.com/fiakoenjiniring/demo-stations#readme",
-            target="_blank",
-        ),
-        ".",
-    ],
-    color="info",
-    class_name="text-center fw-bold",
-)
+# ALERT_INFO = dbc.Alert(
+#     [
+#         "Informasi aplikasi ini dapat dilihat di ",
+#         html.A(
+#             "GitHub README",
+#             href="https://github.com/taruma/demo-stations#readme",
+#             target="_blank",
+#         ),
+#         ".",
+#     ],
+#     color="info",
+#     class_name="text-center fw-bold",
+# )
 
 ALERT_DATA = dbc.Alert(
     [
-        "Data yang ditampilkan berasal dari DATASET KAGGLE.",
+        "The displayed data comes from the KAGGLE DATASET.",
         html.Br(),
-        "Informasi dataset Kaggle bisa dilihat di ",
+        "Information about the Kaggle dataset can be found ",
         html.A(
-            "greegtitan/indonesia-climate",
+            "here",
             href="https://www.kaggle.com/datasets/greegtitan/indonesia-climate",
             target="_blank",
         ),
-        ". Dengan data HDF5 dari ",
+        ". With HDF5 data from ",
         html.A(
-            "sini",
+            "here",
             href="https://www.kaggle.com/code/tarumainfo/compile-rainfall-dataset-to-hdf5",
             target="_blank",
         ),
         ".",
-        html.Br(),
-        "Dengan perubahan ini, maka opsi download metadata/rainfall dimatikan.",
+        # html.Br(),
+        # "With this modification, the metadata/rainfall download options are disabled.",
     ],
     color="warning",
     class_name="text-center fw-bold",
 )
 
 HTML_INFO = html.Div(
-    [ALERT_INFO, ALERT_DATA],
+    # [ALERT_INFO, ALERT_DATA],
+    [ALERT_DATA],
     className="mt-3",
 )
 
@@ -80,7 +85,7 @@ def html_map(combined_metadata_rainfall: pd.DataFrame) -> html.Div:
     """Generate a map of rainfall stations."""
     return html.Div(
         [
-            html.H2("Rainfall Stations", className="text-center"),
+            html.H2("Map of Rainfall Stations", className="text-center"),
             pylayoutfunc.graph_map(
                 figure=pyfigure.generate_station_map_figure(combined_metadata_rainfall)
             ),
@@ -220,15 +225,16 @@ HTML_ROW_BUTTON_GRAPH_COMPLETENESS = dbc.Container(
     dbc.Row(
         dbc.Col(
             dbc.Button(
-                "Show Completeness Rainfall Data",
+                "Plot Rainfall Data Completeness",
                 id="button-graph-completeness",
                 color="warning",
                 disabled=True,
+                size="lg",
                 # class_name="float-end",
             ),
             width="auto",
         ),
-        justify="end",
+        justify="center",
     ),
     fluid=True,
     class_name="my-3",
@@ -238,7 +244,7 @@ HTML_ROW_COMPLETENESS_RAINFALL = dbc.Container(
     [
         dbc.Row(
             [
-                html.H3("Completeness Rainfall Data"),
+                html.H3("Rainfall Data Completeness"),
                 dcc.Loading(
                     dcc.Graph(
                         figure=pyfigure.generate_empty_figure(margin_all=50),
@@ -324,6 +330,7 @@ def html_row_rainfall_options(combined_metadata_rr: pd.DataFrame) -> dbc.Contain
                                 "Plot Rainfall Data",
                                 id="button-graph-rainfall",
                                 color="danger",
+                                size="lg",
                                 disabled=True,
                             ),
                         ],
@@ -331,7 +338,7 @@ def html_row_rainfall_options(combined_metadata_rr: pd.DataFrame) -> dbc.Contain
                     ),
                 ],
                 class_name="my-4",
-                justify="end",
+                justify="center",
             ),
         ],
         fluid=True,
@@ -398,8 +405,8 @@ HTML_CREATOR = html.P(
         html.Hr(),
         "created by ",
         html.A("taruma", href="https://taruma.my.id"),
-        ". Sponsored by ",
-        html.A("FIAKO Engineering", href="https://fiako.engineering"),
+        # ". Sponsored by ",
+        # html.A("FIAKO Engineering", href="https://fiako.engineering"),
     ],
     className="text-muted text-center mt-5 mb-1",
 )
@@ -409,13 +416,14 @@ HTML_FOOTER = html.Div(
     html.Footer(
         [
             html.Span("\u00A9"),
-            " 2022 ",
+            " 2024 ",
             html.A(
-                "PT. FIAKO Enjiniring Indonesia",
-                href="https://fiako.engineering",
+                "Taruma Sakti Megariansyah",
+                href="https://dev.taruma.info",
+                target="_blank",
             ),
             ".",
         ],
-        className="text-center",
+        className="text-center mb-3",
     ),
 )
