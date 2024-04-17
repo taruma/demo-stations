@@ -3,14 +3,14 @@
 <div align="center">
 <img src="./_readme/fiakodev-demo-stations-thumbnail.png" alt="fiako-stations thumbnail"><br>
 
-<img alt="originally developed by" src="https://img.shields.io/badge/developed%20by-fiakodev-orange">
+<img alt="originally developed by" src="https://img.shields.io/badge/originally%20developed%20by-fiakodev-orange">
 <img alt="License" src="https://img.shields.io/github/license/taruma/demo-stations.svg">
 <br>
 <img alt="GitHub release" src="https://img.shields.io/github/release/taruma/demo-stations.svg?logo=github">
 <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/taruma/demo-stations.svg?logo=github"><br>
 
 <a href="https://github.com/taruma/demo-stations" target="_blank"><strong>Github Repository</strong></a> // <code>taruma/demo-stations</code><br>
-<a href="https://fiako-demo-stations.herokuapp.com" target="_blank"><strong>Aplikasi</strong></a> // <code>fiako-demo-stations.herokuapp.com</code><br>
+<a href="https://demo-fiako-stations.herokuapp.com" target="_blank"><strong>Aplikasi</strong></a> // <code>demo-fiako-stations.herokuapp.com</code><br>
 <a href="https://youtu.be/36fYysfJSxo" target="_blank"><strong>Presentasi & Demonstrasi</strong></a>
 </div>
 
